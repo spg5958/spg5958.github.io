@@ -1,0 +1,43 @@
+{
+  "policy": {
+    "name": "checksum_free_settled_reliable_passive_listener",
+    "ban_stop_listen": true,
+    "ban_active_open": true,
+    "ban_output_bank": "P_SYN_RL_NETWORK",
+    "require_listener_present_in_all_states": true,
+    "server_SYN_ACK_replies_allowed": true,
+    "source_model_changed": true,
+    "checksum_dimension_removed": true,
+    "all_packets_checksum_valid_by_assumption": true,
+    "packet_loss_enabled": false,
+    "reliable_bidirectional_channels": true,
+    "goal": "TCP_ESTABLISHED after complete final-packet handling and reliable reply delivery",
+    "goal_positive_places": [
+      "TCP_ESTABLISHED",
+      "A_READY_ATTACKER",
+      "RL_EMPTY_NETWORK",
+      "sk_socket_SERVER"
+    ],
+    "goal_empty_places": [
+      "POST_EST_SERVER",
+      "P_LR_NETWORK"
+    ],
+    "goal_empty_prefixes": [
+      "R_MAKE_",
+      "P_*_RL_NETWORK"
+    ]
+  },
+  "banned_rules": {},
+  "endpoint_condition": {
+    "TCP_ESTABLISHED": 1,
+    "POST_EST_SERVER": 0,
+    "P_LR_NETWORK": 0,
+    "A_READY_ATTACKER": 1,
+    "sk_socket_SERVER": 1,
+    "sk_listener_SERVER": 1,
+    "RL_EMPTY_NETWORK": 1,
+    "all_R_MAKE_places": 0,
+    "all_server_reply_banks": 0
+  },
+  "model_sha256": "476caaa8e5242445a2508a0d04bfe728c31c1b73975f362f282053eb3c58c2b5"
+}

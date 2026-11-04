@@ -1,0 +1,263 @@
+{
+  "status": "found_k",
+  "requested": 1000,
+  "found": 1000,
+  "unique_packet_sequences": 1000,
+  "path_identity": "packet_family_sequence",
+  "packet_cost_rule": "1 per PACKET_SEND_ firing; zero otherwise",
+  "cost_distribution": {
+    "3": 1,
+    "4": 25,
+    "5": 503,
+    "6": 471
+  },
+  "accepted_packet_words_by_exact_cost": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 25,
+    "5": 503,
+    "6": 9392
+  },
+  "remaining_equal_cost_ties": 8921,
+  "goal": "TCP_ESTABLISHED after all final-packet processing and reply delivery",
+  "initial_marking": "saved TCP_LISTEN scenario",
+  "model_file": "tcp_no_checksum_listening.PNPRO",
+  "model_sha256": "476caaa8e5242445a2508a0d04bfe728c31c1b73975f362f282053eb3c58c2b5",
+  "listening_scenario_model": "tcp_no_checksum_listening.PNPRO",
+  "endpoint_requires_full_predicate_not_place_alone": true,
+  "listening_model_sha256": "476caaa8e5242445a2508a0d04bfe728c31c1b73975f362f282053eb3c58c2b5",
+  "listening_model_equivalent_to_query_filter": true,
+  "derived_from_previous_model": true,
+  "source_model_changed": true,
+  "endpoint_changed_to_completed_packet": false,
+  "checksum_modeled": false,
+  "all_packets_assumed_checksum_valid": true,
+  "goal_predicate": {
+    "TCP_ESTABLISHED": 1,
+    "POST_EST_SERVER": 0,
+    "P_LR_NETWORK": 0,
+    "A_READY_ATTACKER": 1,
+    "sk_socket_SERVER": 1,
+    "sk_listener_SERVER": 1,
+    "RL_EMPTY_NETWORK": 1,
+    "all_R_MAKE_places": 0,
+    "all_server_reply_banks": 0
+  },
+  "all_goal_markings_complete_and_established": true,
+  "pending_reply_packets_at_endpoint": 0,
+  "enabled_zero_cost_continuations_at_any_accepted_endpoint": 0,
+  "network_packet_loss_transitions": 0,
+  "network_packet_loss_in_any_result": false,
+  "other_TCP_header_rejections_retained": true,
+  "simultaneous_open_support_retained_in_base_model": true,
+  "query_policy": {
+    "policy": {
+      "name": "checksum_free_settled_reliable_passive_listener",
+      "ban_stop_listen": true,
+      "ban_active_open": true,
+      "ban_output_bank": "P_SYN_RL_NETWORK",
+      "require_listener_present_in_all_states": true,
+      "server_SYN_ACK_replies_allowed": true,
+      "source_model_changed": true,
+      "checksum_dimension_removed": true,
+      "all_packets_checksum_valid_by_assumption": true,
+      "packet_loss_enabled": false,
+      "reliable_bidirectional_channels": true,
+      "goal": "TCP_ESTABLISHED after complete final-packet handling and reliable reply delivery",
+      "goal_positive_places": [
+        "TCP_ESTABLISHED",
+        "A_READY_ATTACKER",
+        "RL_EMPTY_NETWORK",
+        "sk_socket_SERVER"
+      ],
+      "goal_empty_places": [
+        "POST_EST_SERVER",
+        "P_LR_NETWORK"
+      ],
+      "goal_empty_prefixes": [
+        "R_MAKE_",
+        "P_*_RL_NETWORK"
+      ]
+    },
+    "banned_rules": {},
+    "endpoint_condition": {
+      "TCP_ESTABLISHED": 1,
+      "POST_EST_SERVER": 0,
+      "P_LR_NETWORK": 0,
+      "A_READY_ATTACKER": 1,
+      "sk_socket_SERVER": 1,
+      "sk_listener_SERVER": 1,
+      "RL_EMPTY_NETWORK": 1,
+      "all_R_MAKE_places": 0,
+      "all_server_reply_banks": 0
+    }
+  },
+  "all_sequences_begin_with_attacker": true,
+  "server_bare_SYN_packets": 0,
+  "active_open_firings": 0,
+  "stop_listen_firings": 0,
+  "listener_present_all_markings": true,
+  "all_colored_variant_graphs_complete": true,
+  "in_order_FIN_teardown_branches_excluded": true,
+  "mandatory_server_responses_count_toward_cost": true,
+  "finite_colored_firing_histories": 2532656,
+  "graphs_with_zero_cost_cycles": 0,
+  "global_complete_markings": 2365,
+  "graph_vertex_occurrences": 47517,
+  "graph_edge_occurrences": 87267,
+  "unique_XML_edges_independently_replayed": 5582,
+  "canonical_witnesses": 1000,
+  "canonical_packet_rows": 5444,
+  "canonical_delivery_counts": {
+    "processed_by_server": 4109,
+    "received_by_attacker": 1335
+  },
+  "native_GreatSPN_executed": false,
+  "search_statistics": {
+    "status": "PASS",
+    "requested": 1000,
+    "found": 1000,
+    "unique_packet_sequences": 1000,
+    "cost_distribution": {
+      "3": 1,
+      "4": 25,
+      "5": 503,
+      "6": 471
+    },
+    "accepted_words_by_exact_cost": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 25,
+      "5": 503,
+      "6": 9392
+    },
+    "remaining_equal_cost_ties": 8921,
+    "horizon": 6,
+    "subsets_by_cost": {
+      "0": 1,
+      "1": 3,
+      "2": 5,
+      "3": 12,
+      "4": 33,
+      "5": 88,
+      "6": 154
+    },
+    "policy": {
+      "name": "checksum_free_settled_reliable_passive_listener",
+      "ban_stop_listen": true,
+      "ban_active_open": true,
+      "ban_output_bank": "P_SYN_RL_NETWORK",
+      "require_listener_present_in_all_states": true,
+      "server_SYN_ACK_replies_allowed": true,
+      "source_model_changed": true,
+      "checksum_dimension_removed": true,
+      "all_packets_checksum_valid_by_assumption": true,
+      "packet_loss_enabled": false,
+      "reliable_bidirectional_channels": true,
+      "goal": "TCP_ESTABLISHED after complete final-packet handling and reliable reply delivery",
+      "goal_positive_places": [
+        "TCP_ESTABLISHED",
+        "A_READY_ATTACKER",
+        "RL_EMPTY_NETWORK",
+        "sk_socket_SERVER"
+      ],
+      "goal_empty_places": [
+        "POST_EST_SERVER",
+        "P_LR_NETWORK"
+      ],
+      "goal_empty_prefixes": [
+        "R_MAKE_",
+        "P_*_RL_NETWORK"
+      ]
+    },
+    "banned_rules": {},
+    "model_sha256": "476caaa8e5242445a2508a0d04bfe728c31c1b73975f362f282053eb3c58c2b5",
+    "source_model_unchanged": false,
+    "reliable_model_unchanged_during_search": true,
+    "no_network_packet_loss": true,
+    "all_sequences_begin_with_attacker": true,
+    "no_server_bare_SYN_in_any_sequence": true,
+    "all_generated_states_keep_listener": true,
+    "all_cheaper_sequences_included": true,
+    "independent_length_lexical_enumeration_matches_Dijkstra": true,
+    "search_core_sha256": "784d6012830fe60f47e2c1e87d451d581200893c3d2b0a5ca753d61e0b1f2d36",
+    "concrete_states": 26711,
+    "calls": {
+      "zero_states": 26709,
+      "zero_edges": 46758,
+      "closures": 660,
+      "send_states": 145,
+      "send_edges": 24943,
+      "subset_hits": 1839,
+      "closure_hits": 960
+    },
+    "seconds": 3.3651765169997816,
+    "Dijkstra_stats": {
+      "status": "found_k",
+      "found": 1000,
+      "expanded": 7793,
+      "generated": 17713,
+      "unique_states": 109,
+      "peak_queue": 7548,
+      "elapsed_seconds": 0.11132926699792733,
+      "variant_count": 1000,
+      "variants_complete": true,
+      "cost_distribution": {
+        "3": 1,
+        "4": 25,
+        "5": 503,
+        "6": 471
+      },
+      "uploaded_core_unchanged": true,
+      "horizon": 6,
+      "pruning": "Only macros unable to reach first goal within the proven sufficient horizon are omitted.",
+      "concrete_states": 26711,
+      "policy": {
+        "name": "checksum_free_settled_reliable_passive_listener",
+        "ban_stop_listen": true,
+        "ban_active_open": true,
+        "ban_output_bank": "P_SYN_RL_NETWORK",
+        "require_listener_present_in_all_states": true,
+        "server_SYN_ACK_replies_allowed": true,
+        "source_model_changed": true,
+        "checksum_dimension_removed": true,
+        "all_packets_checksum_valid_by_assumption": true,
+        "packet_loss_enabled": false,
+        "reliable_bidirectional_channels": true,
+        "goal": "TCP_ESTABLISHED after complete final-packet handling and reliable reply delivery",
+        "goal_positive_places": [
+          "TCP_ESTABLISHED",
+          "A_READY_ATTACKER",
+          "RL_EMPTY_NETWORK",
+          "sk_socket_SERVER"
+        ],
+        "goal_empty_places": [
+          "POST_EST_SERVER",
+          "P_LR_NETWORK"
+        ],
+        "goal_empty_prefixes": [
+          "R_MAKE_",
+          "P_*_RL_NETWORK"
+        ]
+      },
+      "can_accept_cache": {
+        "hits": 1808,
+        "misses": 333,
+        "maxsize": null,
+        "currsize": 333
+      }
+    },
+    "native_GreatSPN": false,
+    "goal_predicate": "settled complete processing and delivered responses"
+  },
+  "result_format": "SVG images",
+  "packet_exchange_images": 1000,
+  "complete_colored_variant_atlases": 1000,
+  "packet_prefix_tree_nodes": 2352,
+  "prefix_tree_groups": 141,
+  "fresh_recalculation_verified": true
+}
