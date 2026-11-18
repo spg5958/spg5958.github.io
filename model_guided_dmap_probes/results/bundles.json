@@ -1,0 +1,390 @@
+[
+  {
+    "id": "B001",
+    "goal": "establish",
+    "probe_ids": [
+      "P0007",
+      "P0019",
+      "P0099"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "allocation",
+      "sequence_validation",
+      "visibility"
+    ],
+    "execution_resource_proxy": 198,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B002",
+    "goal": "establish",
+    "probe_ids": [
+      "P0045",
+      "P0059",
+      "P0099"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "acknowledgment_validation",
+      "reset",
+      "visibility"
+    ],
+    "execution_resource_proxy": 198,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B003",
+    "goal": "establish",
+    "probe_ids": [
+      "P0083",
+      "P0099",
+      "P0100"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "early_fin",
+      "visibility"
+    ],
+    "execution_resource_proxy": 210,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B004",
+    "goal": "establish",
+    "probe_ids": [
+      "P0133",
+      "P0163",
+      "P0099"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "checksum",
+      "visibility_checksum",
+      "visibility"
+    ],
+    "execution_resource_proxy": 198,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B005",
+    "goal": "establish",
+    "probe_ids": [
+      "P0191",
+      "P0207",
+      "P0099"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "repeated_control",
+      "deferred_reply",
+      "visibility"
+    ],
+    "execution_resource_proxy": 198,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B006",
+    "goal": "reconnect_same",
+    "probe_ids": [
+      "P0009",
+      "P0021",
+      "P0101"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "allocation",
+      "sequence_validation",
+      "visibility"
+    ],
+    "execution_resource_proxy": 450,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B007",
+    "goal": "reconnect_same",
+    "probe_ids": [
+      "P0047",
+      "P0067",
+      "P0101"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "acknowledgment_validation",
+      "reset",
+      "visibility"
+    ],
+    "execution_resource_proxy": 432,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B008",
+    "goal": "reconnect_same",
+    "probe_ids": [
+      "P0085",
+      "P0101",
+      "P0102"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "early_fin",
+      "visibility"
+    ],
+    "execution_resource_proxy": 462,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B009",
+    "goal": "reconnect_same",
+    "probe_ids": [
+      "P0113",
+      "P0135",
+      "P0101"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "visibility",
+      "flow_identity",
+      "checksum"
+    ],
+    "execution_resource_proxy": 450,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B010",
+    "goal": "reconnect_same",
+    "probe_ids": [
+      "P0165",
+      "P0183",
+      "P0101"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "visibility_checksum",
+      "incarnation",
+      "visibility"
+    ],
+    "execution_resource_proxy": 450,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B011",
+    "goal": "reconnect_same",
+    "probe_ids": [
+      "P0193",
+      "P0209",
+      "P0101"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "repeated_control",
+      "deferred_reply",
+      "visibility"
+    ],
+    "execution_resource_proxy": 450,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B012",
+    "goal": "reconnect_different",
+    "probe_ids": [
+      "P0011",
+      "P0023",
+      "P0103"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "allocation",
+      "sequence_validation",
+      "visibility"
+    ],
+    "execution_resource_proxy": 378,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B013",
+    "goal": "reconnect_different",
+    "probe_ids": [
+      "P0049",
+      "P0069",
+      "P0103"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "acknowledgment_validation",
+      "reset",
+      "visibility"
+    ],
+    "execution_resource_proxy": 366,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B014",
+    "goal": "reconnect_different",
+    "probe_ids": [
+      "P0087",
+      "P0103",
+      "P0104"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "early_fin",
+      "visibility"
+    ],
+    "execution_resource_proxy": 390,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B015",
+    "goal": "reconnect_different",
+    "probe_ids": [
+      "P0115",
+      "P0137",
+      "P0103"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "visibility",
+      "flow_identity",
+      "checksum"
+    ],
+    "execution_resource_proxy": 378,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B016",
+    "goal": "reconnect_different",
+    "probe_ids": [
+      "P0167",
+      "P0185",
+      "P0103"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "visibility_checksum",
+      "incarnation",
+      "visibility"
+    ],
+    "execution_resource_proxy": 396,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B017",
+    "goal": "reconnect_different",
+    "probe_ids": [
+      "P0195",
+      "P0211",
+      "P0103"
+    ],
+    "size": 3,
+    "selection": "offline semantic diversity; no empirical optimization",
+    "families": [
+      "repeated_control",
+      "deferred_reply",
+      "visibility"
+    ],
+    "execution_resource_proxy": 378,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  }
+]

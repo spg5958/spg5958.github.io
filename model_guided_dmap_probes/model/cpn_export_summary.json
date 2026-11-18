@@ -1,0 +1,36 @@
+{
+  "format": "finite_colored_endpoint_state_machine",
+  "semantics": "same endpoint.step oracle used by offline search; ordered wire-event expansion",
+  "completeness": "bounded_subgraph",
+  "limits": {
+    "max_states": 1200,
+    "max_edges": 12000,
+    "max_wait_units": 2
+  },
+  "hit_limits": [
+    "max_edges",
+    "unexpanded_frontier"
+  ],
+  "states": 844,
+  "intermediate_states": 2288,
+  "action_edges": 12000,
+  "transitions": 14288,
+  "projection_places": 10,
+  "visible_projection_semantics": "Complete source projection is consumed on first wire event; complete target projection restored on last event. Intermediate states lock the macro-action.",
+  "expanded_states": 272,
+  "frontier_states": 572,
+  "seeded_action_sequences": 848,
+  "seed_states": 98,
+  "seed_edges": 204,
+  "rejected_outside_profile": 237,
+  "native_GreatSPN_open_test": false,
+  "cost_note": "CPN counts each physical wire event. A,W depend on complete search prefix and are applied by search.py.",
+  "exclusions": [
+    "full-prefix search labels are external to endpoint marking",
+    "TIME_WAIT early reuse",
+    "SYN_RECV idle timer exploration",
+    "application stream reconstruction",
+    "DPI semantics"
+  ],
+  "sha256": "04e4b0e7675aea6559da3b7efdbe88f96e16d94261c263bb038c039cdda7185b"
+}

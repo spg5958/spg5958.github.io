@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="1258" viewBox="0 0 1160 1258" role="img" aria-label="early fin / establish">
+<title>early fin / establish</title>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="context-stroke"/></marker></defs>
+<style>text{font-family:Inter,Arial,Helvetica,sans-serif} .mono{font-family:ui-monospace,monospace}</style>
+<rect width="1160" height="1258" fill="#ffffff"/>
+<rect width="1160" height="145" fill="#eff7f6"/>
+<text x="32" y="33" fill="#117f7a" font-size="12" font-weight="700" text-anchor="start">P0090 / OFFLINE MEASUREMENT PLAN</text>
+<text x="32" y="65" fill="#142d3b" font-size="21" font-weight="700" text-anchor="start">early fin / establish</text>
+<text x="32" y="122" fill="#142d3b" font-size="14" font-weight="600" text-anchor="start">C = 9  ·  N = 8  ·  A = 1  ·  W = 0  ·  T = 0</text>
+<text x="32" y="166" fill="#587080" font-size="12" font-weight="400" text-anchor="start">Goal: establish   |   Decision family: early_fin</text>
+<text x="32" y="187" fill="#142d3b" font-size="12" font-weight="600" text-anchor="start">Checkpoint: f0 / ESTABLISHED / incarnation g0 / ISNs red, pink</text>
+<text x="32" y="209" fill="#587080" font-size="10" font-weight="400" text-anchor="start">Decisions: early_fin|ESTABLISHED|FA|in_window|exact|current|full|valid</text>
+<text x="148" y="261" fill="#142d3b" font-size="12" font-weight="700" text-anchor="middle">MEASUREMENT MACHINE</text>
+<line x1="148" y1="276" x2="148" y2="1184" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<text x="557" y="261" fill="#142d3b" font-size="12" font-weight="700" text-anchor="middle">DPI OBSERVATION</text>
+<line x1="557" y1="276" x2="557" y2="1184" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<text x="989" y="261" fill="#142d3b" font-size="12" font-weight="700" text-anchor="middle">REFERENCE LINUX</text>
+<line x1="989" y1="276" x2="989" y2="1184" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<rect x="25" y="284" width="1110" height="112" fill="#f8fafb"/>
+<line x1="148" y1="284" x2="148" y2="396" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<line x1="557" y1="284" x2="557" y2="396" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<line x1="989" y1="284" x2="989" y2="396" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<text x="42" y="309" fill="#587080" font-size="11" font-weight="600" text-anchor="start">01</text>
+<line x1="148" y1="327" x2="989" y2="327" stroke="#275f8a" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="568.5" y="311" fill="#275f8a" font-size="12" font-weight="700" text-anchor="middle">SYN</text>
+<text x="148" y="348" fill="#587080" font-size="11" font-weight="400" text-anchor="start">f0   |   g0   |   ISNs red   |   SEQ=red [isn]   |   ACK=0 (unused)</text>
+<text x="148" y="365" fill="#587080" font-size="11" font-weight="400" text-anchor="start">new_request</text>
+<text x="148" y="384" fill="#587080" font-size="10" font-weight="400" text-anchor="start">Reference marking: f0 = SYN_RECV:g0:red/pink   |   f1 = LISTEN:g-1:None/None</text>
+<text x="42" y="421" fill="#587080" font-size="11" font-weight="600" text-anchor="start">02</text>
+<line x1="989" y1="439" x2="148" y2="439" stroke="#117f7a" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="568.5" y="423" fill="#117f7a" font-size="12" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="148" y="460" fill="#587080" font-size="11" font-weight="400" text-anchor="start">f0   |   g0   |   ISNs red/pink   |   SEQ=pink   |   ACK=red+1</text>
+<text x="148" y="477" fill="#587080" font-size="11" font-weight="400" text-anchor="start">genuine SYN-ACK</text>
+<text x="148" y="496" fill="#587080" font-size="10" font-weight="400" text-anchor="start">Reference marking: f0 = SYN_RECV:g0:red/pink   |   f1 = LISTEN:g-1:None/None</text>
+<rect x="25" y="508" width="1110" height="112" fill="#f8fafb"/>
+<line x1="148" y1="508" x2="148" y2="620" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<line x1="557" y1="508" x2="557" y2="620" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<line x1="989" y1="508" x2="989" y2="620" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<text x="42" y="533" fill="#587080" font-size="11" font-weight="600" text-anchor="start">03</text>
+<line x1="148" y1="551" x2="989" y2="551" stroke="#275f8a" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="568.5" y="535" fill="#275f8a" font-size="12" font-weight="700" text-anchor="middle">ACK</text>
+<text x="148" y="572" fill="#587080" font-size="11" font-weight="400" text-anchor="start">f0   |   g0   |   ISNs red/pink   |   SEQ=red+1 [exact]   |   ACK=pink+1 [exact]</text>
+<text x="148" y="589" fill="#587080" font-size="11" font-weight="400" text-anchor="start">establish</text>
+<text x="148" y="608" fill="#587080" font-size="10" font-weight="400" text-anchor="start">Reference marking: f0 = ESTABLISHED:g0:red/pink   |   f1 = LISTEN:g-1:None/None</text>
+<text x="42" y="645" fill="#587080" font-size="11" font-weight="600" text-anchor="start">04</text>
+<line x1="148" y1="663" x2="989" y2="663" stroke="#275f8a" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="568.5" y="647" fill="#275f8a" font-size="12" font-weight="700" text-anchor="middle">FIN|ACK</text>
+<text x="148" y="684" fill="#587080" font-size="11" font-weight="400" text-anchor="start">f0   |   g0   |   ISNs red/pink   |   SEQ=red+1+32768 (in-window; unfilled gap) [in_window]   |   ACK=pink+1 [exact]</text>
+<text x="148" y="701" fill="#587080" font-size="11" font-weight="400" text-anchor="start">out_of_order_not_consumed</text>
+<text x="148" y="720" fill="#587080" font-size="10" font-weight="400" text-anchor="start">Reference marking: f0 = ESTABLISHED:g0:red/pink   |   f1 = LISTEN:g-1:None/None</text>
+<rect x="25" y="732" width="1110" height="112" fill="#f8fafb"/>
+<line x1="148" y1="732" x2="148" y2="844" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<line x1="557" y1="732" x2="557" y2="844" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<line x1="989" y1="732" x2="989" y2="844" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<text x="42" y="757" fill="#587080" font-size="11" font-weight="600" text-anchor="start">05</text>
+<line x1="989" y1="775" x2="148" y2="775" stroke="#117f7a" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="568.5" y="759" fill="#117f7a" font-size="12" font-weight="700" text-anchor="middle">ACK</text>
+<text x="148" y="796" fill="#587080" font-size="11" font-weight="400" text-anchor="start">f0   |   g0   |   ISNs red/pink   |   SEQ=pink+1   |   ACK=red+1</text>
+<text x="148" y="813" fill="#587080" font-size="11" font-weight="400" text-anchor="start">out-of-order data/FIN; gap is not filled</text>
+<text x="148" y="832" fill="#587080" font-size="10" font-weight="400" text-anchor="start">Reference marking: f0 = ESTABLISHED:g0:red/pink   |   f1 = LISTEN:g-1:None/None</text>
+<text x="42" y="869" fill="#587080" font-size="11" font-weight="600" text-anchor="start">06</text>
+<line x1="148" y1="887" x2="989" y2="887" stroke="#275f8a" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="568.5" y="871" fill="#275f8a" font-size="12" font-weight="700" text-anchor="middle">PSH|ACK + readout</text>
+<text x="148" y="908" fill="#587080" font-size="11" font-weight="400" text-anchor="start">f0   |   g0   |   ISNs red/pink   |   SEQ=red+1 [exact]   |   ACK=pink+1 [exact]</text>
+<text x="148" y="925" fill="#587080" font-size="11" font-weight="400" text-anchor="start">accepted_ack</text>
+<text x="148" y="944" fill="#587080" font-size="10" font-weight="400" text-anchor="start">Reference marking: f0 = ESTABLISHED:g0:red/pink   |   f1 = LISTEN:g-1:None/None</text>
+<rect x="25" y="956" width="1110" height="112" fill="#f8fafb"/>
+<line x1="148" y1="956" x2="148" y2="1068" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<line x1="557" y1="956" x2="557" y2="1068" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<line x1="989" y1="956" x2="989" y2="1068" stroke="#bacbd0" stroke-dasharray="3 5"/>
+<text x="42" y="981" fill="#587080" font-size="11" font-weight="600" text-anchor="start">07</text>
+<line x1="989" y1="999" x2="148" y2="999" stroke="#117f7a" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="568.5" y="983" fill="#117f7a" font-size="12" font-weight="700" text-anchor="middle">ACK</text>
+<text x="148" y="1020" fill="#587080" font-size="11" font-weight="400" text-anchor="start">f0   |   g0   |   ISNs red/pink   |   SEQ=pink+1   |   ACK=red+1+L_readout</text>
+<text x="148" y="1037" fill="#587080" font-size="11" font-weight="400" text-anchor="start">ACK accepted payload/FIN</text>
+<text x="148" y="1056" fill="#587080" font-size="10" font-weight="400" text-anchor="start">Reference marking: f0 = ESTABLISHED:g0:red/pink   |   f1 = LISTEN:g-1:None/None</text>
+<text x="42" y="1093" fill="#587080" font-size="11" font-weight="600" text-anchor="start">08</text>
+<line x1="148" y1="1111" x2="989" y2="1111" stroke="#275f8a" stroke-width="2.3" marker-end="url(#arrow)"/>
+<text x="568.5" y="1095" fill="#275f8a" font-size="12" font-weight="700" text-anchor="middle">RST</text>
+<text x="148" y="1132" fill="#587080" font-size="11" font-weight="400" text-anchor="start">f0   |   g0   |   ISNs red   |   SEQ=red+1+L_readout [exact]   |   ACK=0 (unused)</text>
+<text x="148" y="1149" fill="#587080" font-size="11" font-weight="400" text-anchor="start">accepted_reset</text>
+<text x="148" y="1168" fill="#587080" font-size="10" font-weight="400" text-anchor="start">Reference marking: f0 = LISTEN:g-1:None/None   |   f1 = LISTEN:g-1:None/None</text>
+<line x1="32" y1="1194" x2="1127" y2="1194" stroke="#d7e1e5"/>
+<text x="32" y="1217" fill="#587080" font-size="11" font-weight="400" text-anchor="start">Colored arrows = modeled wire events. Dashed endpoint leg = deliberate TTL expiry. Red = invalid TCP checksum.</text>
+<text x="32" y="1237" fill="#587080" font-size="11" font-weight="400" text-anchor="start">No packets sent. Linux behavior is symbolic. All censorship bits and DPI implementation outcomes are unmeasured.</text>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "wall_seconds": 4.9568,
+  "user_cpu_seconds": 3.721772,
+  "system_cpu_seconds": 1.291852,
+  "peak_rss_mib": 288.562,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "packets_transmitted": 0,
+  "measurement": "Python process peak RSS; excludes external applications; host is not the user's M2"
+}

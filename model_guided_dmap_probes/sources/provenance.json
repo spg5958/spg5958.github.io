@@ -1,0 +1,31 @@
+{
+  "unavailable": "TCP_lifecycle_measurement_prompt.md (not attached)",
+  "inputs": [
+    {
+      "attachment": "dmap_tcp_handshake_algorithm (1)(1).pdf",
+      "sha256": "a6a0d773ef16e6893b700d55e7da8a646cef4905f6203aa50f00473ad303ca8a",
+      "bytes": 127740
+    },
+    {
+      "attachment": "tcp_no_checksum_1000(1).zip",
+      "sha256": "3f9135b7a76146bb514199cf05e87890cc85116fb8be908c5ff065ee63a95c88",
+      "bytes": 26243977
+    },
+    {
+      "attachment": "greatspn_paths(1).py",
+      "sha256": "171463cba1cb557b28eeec9f4e0250e6fa9ed1436adca86fba01216166c4a2c3",
+      "bytes": 176339
+    }
+  ],
+  "new_engine_files": {
+    "endpoint.py": "fb8e9b84fb2c2a3fa13ec0002497758c6301d86d4c171c92cb5d43ef0dcdc02a",
+    "build_fixtures.py": "97a6972ac61ac3044426bc60c427fc51f02fc4270f050862b856ca86c03d37b9",
+    "model_overview.py": "7b7b5727c68c4f879f12783feb446a055729a6c206e8b2515bb159e494e0a123",
+    "verify_results.py": "d2b7aa2bc221824c2ad6ef2d541718dd6ff631b300b7e365200d0e8e47f7bc7c",
+    "search.py": "5de69cdfe07f40067348e8341356fea9692d389c6129b794f1edb685dda373ee",
+    "render_results.py": "713b8df5d5c3257ae2e69901439254624069264d10e946fcbe1354f22757d11f",
+    "verify_cpn.py": "86afdd99bfae1059cfcbdbfd943de9aa534abacdb96734b151255edda7fbb46f",
+    "run_pilot.py": "372dac2d2df2b8f262308e21017a5a044d8c60d03b43f70808f1697d5890c86f",
+    "model_export.py": "eec9ada611145a3c79e13e0ec7f3b530cd6d258cb2bfecb20ee3d694285361ef"
+  }
+}

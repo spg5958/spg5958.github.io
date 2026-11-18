@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#64748b"/></marker></defs>
+<rect width="1440" height="1080" fill="#f3f6fb"/>
+<text x="36" y="48" font-family="Arial,Helvetica,sans-serif" font-size="31" fill="#25334a" font-weight="700" text-anchor="start">TCP lifecycle: offline reference and executable colored net</text>
+<text x="36" y="78" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#64748b" font-weight="400" text-anchor="start">Structural schematic · PNPRO contains the executable bounded graph; this page explains its encoding.</text>
+<rect x="36" y="108" width="1368" height="72" rx="14" fill="#eaf0ff" stroke="#d8e0ec"/>
+<rect x="36" y="125" width="5" height="25" rx="2" fill="#1d4ed8"/>
+<text x="56" y="145" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Two incarnations, two four-tuples</text>
+<circle cx="600" cy="144" r="11" fill="#cf4c53"/>
+<text x="620" y="150" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#25334a" font-weight="700" text-anchor="start">red</text>
+<circle cx="770" cy="144" r="11" fill="#3776d2"/>
+<text x="790" y="150" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#25334a" font-weight="700" text-anchor="start">blue</text>
+<circle cx="940" cy="144" r="11" fill="#d96caf"/>
+<text x="960" y="150" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#25334a" font-weight="700" text-anchor="start">pink</text>
+<circle cx="1110" cy="144" r="11" fill="#8557c5"/>
+<text x="1130" y="150" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#25334a" font-weight="700" text-anchor="start">purple</text>
+<rect x="36" y="212" width="244" height="178" rx="14" fill="#ffffff" stroke="#d8e0ec"/>
+<rect x="36" y="229" width="5" height="25" rx="2" fill="#1d4ed8"/>
+<text x="56" y="249" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Attacker action</text>
+<text x="56" y="280" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Flags + SEQ / ACK relation</text>
+<text x="56" y="305" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Flow f0 or f1 + incarnation</text>
+<text x="56" y="330" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Delivery + TCP checksum</text>
+<text x="56" y="355" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Readout has length L_readout</text>
+<rect x="313" y="212" width="244" height="178" rx="14" fill="#ffffff" stroke="#d8e0ec"/>
+<rect x="313" y="229" width="5" height="25" rx="2" fill="#d58221"/>
+<text x="333" y="249" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Visibility / validation</text>
+<text x="333" y="280" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">DPI-only → no Linux event</text>
+<text x="333" y="305" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Invalid TCP → reject at Linux</text>
+<text x="333" y="330" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Full + valid → reference TCP</text>
+<text x="333" y="355" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">DPI processing stays unknown</text>
+<rect x="590" y="212" width="244" height="178" rx="14" fill="#ffffff" stroke="#d8e0ec"/>
+<rect x="590" y="229" width="5" height="25" rx="2" fill="#1d4ed8"/>
+<text x="610" y="249" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Endpoint transition</text>
+<text x="610" y="280" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Both flow records retained</text>
+<text x="610" y="305" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">No guessed opaque server ISN</text>
+<text x="610" y="330" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Genuine effects and replies</text>
+<text x="610" y="355" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">One complete successor marking</text>
+<rect x="867" y="212" width="244" height="178" rx="14" fill="#ffffff" stroke="#d8e0ec"/>
+<rect x="867" y="229" width="5" height="25" rx="2" fill="#1d4ed8"/>
+<text x="887" y="249" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Ordered wire events</text>
+<text x="887" y="280" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Attacker send counts in N</text>
+<text x="887" y="305" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Forced server sends count in N</text>
+<text x="887" y="330" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Every send has its own firing</text>
+<text x="887" y="355" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Wait / observation ≠ send</text>
+<rect x="1144" y="212" width="260" height="178" rx="14" fill="#ffffff" stroke="#d8e0ec"/>
+<rect x="1144" y="229" width="5" height="25" rx="2" fill="#8557c5"/>
+<text x="1164" y="249" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Attacker observation</text>
+<text x="1164" y="280" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Observe real reply → learn ISN</text>
+<text x="1164" y="305" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Deferred reply → pending token</text>
+<text x="1164" y="330" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Observation is separately fired</text>
+<text x="1164" y="355" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Censorship bit Y is unmeasured</text>
+<path d="M282 300L311 300" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M559 300L588 300" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M836 300L865 300" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M1113 300L1142 300" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="36" y="422" width="1368" height="270" rx="14" fill="#ffffff" stroke="#d8e0ec"/>
+<rect x="36" y="439" width="5" height="25" rx="2" fill="#1d4ed8"/>
+<text x="56" y="459" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Live CPN marking</text>
+<rect x="58" y="505" width="325" height="155" rx="14" fill="#f6f9ff" stroke="#d8e0ec"/>
+<rect x="58" y="522" width="5" height="25" rx="2" fill="#1d4ed8"/>
+<text x="78" y="542" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Flow f0 projection</text>
+<text x="78" y="573" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">TCP phase token</text>
+<text x="78" y="598" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Attacker ISN / opaque server ISN</text>
+<text x="78" y="623" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Permanent passive listener profile</text>
+<rect x="405" y="505" width="325" height="155" rx="14" fill="#f6f9ff" stroke="#d8e0ec"/>
+<rect x="405" y="522" width="5" height="25" rx="2" fill="#1d4ed8"/>
+<text x="425" y="542" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Flow f1 projection</text>
+<text x="425" y="573" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">TCP phase token</text>
+<text x="425" y="598" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Attacker ISN / opaque server ISN</text>
+<text x="425" y="623" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Independent four-tuple; no state erase</text>
+<rect x="752" y="505" width="325" height="155" rx="14" fill="#fbf7ff" stroke="#d8e0ec"/>
+<rect x="752" y="522" width="5" height="25" rx="2" fill="#8557c5"/>
+<text x="772" y="542" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">Persistent memory</text>
+<text x="772" y="573" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Attacker-known server identities</text>
+<text x="772" y="598" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Retired client / server identities</text>
+<text x="772" y="623" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Pending unobserved server identity</text>
+<rect x="1099" y="505" width="285" height="155" rx="14" fill="#eaf0ff" stroke="#d8e0ec"/>
+<rect x="1099" y="522" width="5" height="25" rx="2" fill="#1d4ed8"/>
+<text x="1119" y="542" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25334a" font-weight="700" text-anchor="start">CState token</text>
+<text x="1119" y="573" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Complete encoded endpoint state</text>
+<text x="1119" y="598" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Guards the enabled source</text>
+<text x="1119" y="623" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#25334a" font-weight="400" text-anchor="start">Mandatory response-chain lock</text>
+<text x="58" y="482" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#53627c" font-weight="400" text-anchor="start">First event consumes source projections. Last event restores target projections. Intermediate tokens preserve causal order.</text>
+<text x="36" y="718" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#25334a" font-weight="700" text-anchor="start">Reference lifecycle branches</text>
+<text x="36" y="774" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#64748b" font-weight="700" text-anchor="start">SETUP</text>
+<rect x="192" y="749" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="274.5" y="774" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">LISTEN</text>
+<path d="M359 769L376 769" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="380" y="749" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="462.5" y="774" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">SYN_RECV</text>
+<path d="M547 769L564 769" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="568" y="749" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="650.5" y="774" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">ESTABLISHED</text>
+<text x="978" y="774" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#53627c" font-weight="400" text-anchor="start">Valid third ACK; DEFER_ACCEPT off</text>
+<text x="36" y="838" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#64748b" font-weight="700" text-anchor="start">PASSIVE CLOSE</text>
+<rect x="192" y="813" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="274.5" y="838" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">ESTABLISHED</text>
+<path d="M359 833L376 833" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="380" y="813" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="462.5" y="838" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">CLOSE_WAIT</text>
+<path d="M547 833L564 833" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="568" y="813" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="650.5" y="838" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">LAST_ACK</text>
+<path d="M735 833L752 833" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="756" y="813" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="838.5" y="838" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">LISTEN</text>
+<text x="978" y="838" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#53627c" font-weight="400" text-anchor="start">Peer FIN, reference application close, ACK</text>
+<text x="36" y="902" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#64748b" font-weight="700" text-anchor="start">ACTIVE CLOSE</text>
+<rect x="192" y="877" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="274.5" y="902" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">ESTABLISHED</text>
+<path d="M359 897L376 897" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="380" y="877" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="462.5" y="902" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">FIN_WAIT1</text>
+<path d="M547 897L564 897" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="568" y="877" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="650.5" y="902" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">FIN_WAIT2</text>
+<path d="M735 897L752 897" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="756" y="877" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="838.5" y="902" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">TIME_WAIT</text>
+<text x="978" y="902" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#53627c" font-weight="400" text-anchor="start">Then explicit expiry restores LISTEN</text>
+<text x="36" y="966" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#64748b" font-weight="700" text-anchor="start">SIMULTANEOUS</text>
+<rect x="192" y="941" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="274.5" y="966" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">FIN_WAIT1</text>
+<path d="M359 961L376 961" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="380" y="941" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="462.5" y="966" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">CLOSING</text>
+<path d="M547 961L564 961" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="568" y="941" width="165" height="40" rx="20" fill="#ffffff" stroke="#ccd7e6"/>
+<text x="650.5" y="966" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#25334a" font-weight="700" text-anchor="middle">TIME_WAIT</text>
+<text x="978" y="966" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#53627c" font-weight="400" text-anchor="start">ACK of own FIN completes closing</text>
+<text x="36" y="1035" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#53627c" font-weight="400" text-anchor="start">Exact reset can retire an incarnation. Same-tuple reuse preserves closing / TIME_WAIT state until the profile permits reopening.</text>
+<text x="36" y="1062" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#53627c" font-weight="400" text-anchor="start">C = N + A + 2W + κT is applied to complete search prefixes; real DPI outcomes and discrimination remain unmeasured.</text>
+</svg>

@@ -1,0 +1,785 @@
+{
+  "source": {
+    "title": "Robust TCP Stream Reassembly In the Presence of Adversaries",
+    "authors": [
+      "Sarang Dharmapurikar",
+      "Vern Paxson"
+    ],
+    "year": 2005,
+    "figure": 4,
+    "url": "https://www.usenix.org/legacy/event/sec05/tech/full_papers/dharmapurikar/dharmapurikar.pdf",
+    "html_url": "https://www.usenix.org/legacy/events/sec05/tech/full_papers/dharmapurikar/dharmapurikar_html/index.html",
+    "figure_image_url": "https://www.usenix.org/legacy/events/sec05/tech/full_papers/dharmapurikar/dharmapurikar_html/img25.png"
+  },
+  "letter_mapping_status": "unverified_visual_unavailable",
+  "letter_mapping_caution": "Do not claim that a generic interval fixture is a particular Figure 4 letter. Source body text supports the category sets below, but exact interval-to-letter mapping requires visual verification of Figure 4.",
+  "verified_categories": {
+    "requires_overlap_normalization": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "J",
+      "K",
+      "O",
+      "P",
+      "Q",
+      "R"
+    ],
+    "multiple_valid_pieces_after_overlap_removal": [
+      "F",
+      "K",
+      "P"
+    ],
+    "post_normalization_geometries": [
+      "G",
+      "H",
+      "I",
+      "L",
+      "M",
+      "N",
+      "S",
+      "T"
+    ],
+    "in_order_analyzed": [
+      "G",
+      "H",
+      "I"
+    ],
+    "hole_filled_and_buffer_released": [
+      "I"
+    ],
+    "forwarded_and_buffered": [
+      "L",
+      "N",
+      "S"
+    ],
+    "dropped_by_authors_one_hole_design": [
+      "M",
+      "T"
+    ]
+  },
+  "generic_fixtures": [
+    {
+      "id": "gap_complete",
+      "forwarded": [
+        [
+          0,
+          2
+        ]
+      ],
+      "buffered": [
+        [
+          6,
+          8
+        ]
+      ],
+      "incoming": [
+        2,
+        6
+      ],
+      "purpose": "Close leading hole exactly"
+    },
+    {
+      "id": "gap_prefix",
+      "forwarded": [
+        [
+          0,
+          2
+        ]
+      ],
+      "buffered": [
+        [
+          6,
+          8
+        ]
+      ],
+      "incoming": [
+        2,
+        4
+      ],
+      "purpose": "Narrow leading hole from beginning"
+    },
+    {
+      "id": "gap_suffix",
+      "forwarded": [
+        [
+          0,
+          2
+        ]
+      ],
+      "buffered": [
+        [
+          6,
+          8
+        ]
+      ],
+      "incoming": [
+        4,
+        6
+      ],
+      "purpose": "Narrow leading hole from end"
+    },
+    {
+      "id": "gap_middle",
+      "forwarded": [
+        [
+          0,
+          2
+        ]
+      ],
+      "buffered": [
+        [
+          8,
+          10
+        ]
+      ],
+      "incoming": [
+        4,
+        6
+      ],
+      "purpose": "Split one hole into two"
+    },
+    {
+      "id": "left_partial_overlap",
+      "forwarded": [],
+      "buffered": [
+        [
+          4,
+          8
+        ]
+      ],
+      "incoming": [
+        2,
+        6
+      ],
+      "purpose": "Incoming starts left and ends inside buffered interval"
+    },
+    {
+      "id": "right_partial_overlap",
+      "forwarded": [],
+      "buffered": [
+        [
+          2,
+          6
+        ]
+      ],
+      "incoming": [
+        4,
+        8
+      ],
+      "purpose": "Incoming starts inside and ends right of buffered interval"
+    },
+    {
+      "id": "incoming_contained",
+      "forwarded": [],
+      "buffered": [
+        [
+          2,
+          8
+        ]
+      ],
+      "incoming": [
+        4,
+        6
+      ],
+      "purpose": "Incoming strictly contained in buffered interval"
+    },
+    {
+      "id": "incoming_contains",
+      "forwarded": [],
+      "buffered": [
+        [
+          4,
+          6
+        ]
+      ],
+      "incoming": [
+        2,
+        8
+      ],
+      "purpose": "Incoming strictly contains buffered interval; two valid pieces after removing overlap"
+    },
+    {
+      "id": "duplicate",
+      "forwarded": [],
+      "buffered": [
+        [
+          2,
+          6
+        ]
+      ],
+      "incoming": [
+        2,
+        6
+      ],
+      "purpose": "Equal interval duplicate"
+    },
+    {
+      "id": "equal_start_shorter",
+      "forwarded": [],
+      "buffered": [
+        [
+          2,
+          8
+        ]
+      ],
+      "incoming": [
+        2,
+        6
+      ],
+      "purpose": "Equal start and shorter incoming"
+    },
+    {
+      "id": "equal_start_longer",
+      "forwarded": [],
+      "buffered": [
+        [
+          2,
+          6
+        ]
+      ],
+      "incoming": [
+        2,
+        8
+      ],
+      "purpose": "Equal start and longer incoming"
+    },
+    {
+      "id": "equal_end_shorter",
+      "forwarded": [],
+      "buffered": [
+        [
+          2,
+          8
+        ]
+      ],
+      "incoming": [
+        4,
+        8
+      ],
+      "purpose": "Equal end and shorter incoming"
+    },
+    {
+      "id": "equal_end_longer",
+      "forwarded": [],
+      "buffered": [
+        [
+          4,
+          8
+        ]
+      ],
+      "incoming": [
+        2,
+        8
+      ],
+      "purpose": "Equal end and longer incoming"
+    },
+    {
+      "id": "adjacent_before",
+      "forwarded": [],
+      "buffered": [
+        [
+          4,
+          8
+        ]
+      ],
+      "incoming": [
+        2,
+        4
+      ],
+      "purpose": "Incoming touches buffered interval from left"
+    },
+    {
+      "id": "adjacent_after",
+      "forwarded": [],
+      "buffered": [
+        [
+          2,
+          6
+        ]
+      ],
+      "incoming": [
+        6,
+        8
+      ],
+      "purpose": "Incoming touches buffered interval from right"
+    },
+    {
+      "id": "multi_region_bridge",
+      "forwarded": [],
+      "buffered": [
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "incoming": [
+        3,
+        7
+      ],
+      "purpose": "Incoming overlaps both buffered regions and closes intervening hole"
+    },
+    {
+      "id": "multi_region_span",
+      "forwarded": [],
+      "buffered": [
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "incoming": [
+        1,
+        9
+      ],
+      "purpose": "Incoming contains both buffered regions; three pieces remain after overlap removal"
+    },
+    {
+      "id": "after_inspection",
+      "forwarded": [
+        [
+          0,
+          7
+        ]
+      ],
+      "buffered": [],
+      "incoming": [
+        3,
+        6
+      ],
+      "purpose": "Conflict wholly below an irreversible inspection frontier"
+    },
+    {
+      "id": "cross_frontier",
+      "forwarded": [
+        [
+          0,
+          4
+        ]
+      ],
+      "buffered": [
+        [
+          6,
+          8
+        ]
+      ],
+      "incoming": [
+        2,
+        7
+      ],
+      "purpose": "Conflict crosses inspected prefix, leading gap, buffered interval"
+    }
+  ],
+  "implementation_notes": [
+    "Intervals are half-open abstract coordinates and must be order-preservingly mapped to serialized SNI-relative byte endpoints.",
+    "In the default TTL family forwarded means delivered internally to the DPI analyzer, not to Linux. Linux has no data ACK frontier advance.",
+    "The paper's normalization algorithm deliberately removes uncommon geometries. Do not apply it as the unknown DPI oracle.",
+    "At most two geometric holes means maximal missing components before the largest received endpoint; do not count the future suffix.",
+    "A fixed prefix that was analyzed can be represented separately from buffered bytes; do not let a later conflicting byte undo a latched censor bit.",
+    "Bare interval overlap does not imply conflicting bytes. Payload synthesis must create equal-length hostname disagreements within overlapping SNI positions.",
+    "A letter label indicates geometric coverage only, never a measured behavioral fingerprint."
+  ],
+  "cases": {
+    "gap_complete": {
+      "geometry": [
+        [
+          0,
+          2
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Close leading hole exactly",
+      "forwarded_prefix_count": 1,
+      "local_test_step": 3,
+      "map_initial_forwarded_zero_to_stream_start": true,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "gap_prefix": {
+      "geometry": [
+        [
+          0,
+          2
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Narrow leading hole from beginning",
+      "forwarded_prefix_count": 1,
+      "local_test_step": 3,
+      "map_initial_forwarded_zero_to_stream_start": true,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "gap_suffix": {
+      "geometry": [
+        [
+          0,
+          2
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Narrow leading hole from end",
+      "forwarded_prefix_count": 1,
+      "local_test_step": 3,
+      "map_initial_forwarded_zero_to_stream_start": true,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "gap_middle": {
+      "geometry": [
+        [
+          0,
+          2
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Split one hole into two",
+      "forwarded_prefix_count": 1,
+      "local_test_step": 3,
+      "map_initial_forwarded_zero_to_stream_start": true,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "left_partial_overlap": {
+      "geometry": [
+        [
+          4,
+          8
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Incoming starts left and ends inside buffered interval",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "right_partial_overlap": {
+      "geometry": [
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Incoming starts inside and ends right of buffered interval",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "incoming_contained": {
+      "geometry": [
+        [
+          2,
+          8
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Incoming strictly contained in buffered interval",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "incoming_contains": {
+      "geometry": [
+        [
+          4,
+          6
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Incoming strictly contains buffered interval; two valid pieces after removing overlap",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "duplicate": {
+      "geometry": [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Equal interval duplicate",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "equal_start_shorter": {
+      "geometry": [
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Equal start and shorter incoming",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "equal_start_longer": {
+      "geometry": [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Equal start and longer incoming",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "equal_end_shorter": {
+      "geometry": [
+        [
+          2,
+          8
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Equal end and shorter incoming",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "equal_end_longer": {
+      "geometry": [
+        [
+          4,
+          8
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Equal end and longer incoming",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "adjacent_before": {
+      "geometry": [
+        [
+          4,
+          8
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Incoming touches buffered interval from left",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "adjacent_after": {
+      "geometry": [
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Incoming touches buffered interval from right",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "multi_region_bridge": {
+      "geometry": [
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Incoming overlaps both buffered regions and closes intervening hole",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 3,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "multi_region_span": {
+      "geometry": [
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Incoming contains both buffered regions; three pieces remain after overlap removal",
+      "forwarded_prefix_count": 0,
+      "local_test_step": 3,
+      "map_initial_forwarded_zero_to_stream_start": false,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "after_inspection": {
+      "geometry": [
+        [
+          0,
+          7
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Conflict wholly below an irreversible inspection frontier",
+      "forwarded_prefix_count": 1,
+      "local_test_step": 2,
+      "map_initial_forwarded_zero_to_stream_start": true,
+      "source_letter": null,
+      "source_mapping_verified": false
+    },
+    "cross_frontier": {
+      "geometry": [
+        [
+          0,
+          4
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "relative_to_sni": true,
+      "description": "Conflict crosses inspected prefix, leading gap, buffered interval",
+      "forwarded_prefix_count": 1,
+      "local_test_step": 3,
+      "map_initial_forwarded_zero_to_stream_start": true,
+      "source_letter": null,
+      "source_mapping_verified": false
+    }
+  },
+  "coordinate_contract": "cases geometry coordinates are SNI-relative except that the first forwarded interval start 0 must map to absolute stream 0 when map_initial_forwarded_zero_to_stream_start is true. Map all other values x to u+x. Append missing framing and gaps afterward, counting each actual segment. Local-test-step identifies incoming segment. Fixture IDs are descriptive, not Figure 4 letter assignments."
+}

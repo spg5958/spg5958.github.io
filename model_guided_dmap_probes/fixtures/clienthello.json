@@ -1,0 +1,23 @@
+{
+  "purpose": "offline TLS1.2 ClientHello framing fixture, one TCP segment; no transmission code",
+  "hostnames": "Equal-length placeholders. Neither name has measured censorship status. Replace with calibrated equal-length names before empirical use.",
+  "tls": "TLS1.2 ClientHello; ECDHE_RSA_AES_128_GCM_SHA256; secp256r1; null compression; SNI and signature algorithms",
+  "fixed_random": "00..1f for reproducible offline serialization only",
+  "length_symbol": "L_readout",
+  "segmentation": "one segment",
+  "variants": {
+    "benign": {
+      "hostname": "allowed.example",
+      "length_bytes": 100,
+      "hex": "160303005f0100005b0303000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f000002c02f0100003000000014001200000f616c6c6f7765642e6578616d706c65000a000400020017000b00020100000d0006000404010403",
+      "sha256": "4f69a0fbf2ff1d7f05f1c8046877ccae7d21f47cf21e907cb09547b65b6a6ce0"
+    },
+    "blocked": {
+      "hostname": "blocked.example",
+      "length_bytes": 100,
+      "hex": "160303005f0100005b0303000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f000002c02f0100003000000014001200000f626c6f636b65642e6578616d706c65000a000400020017000b00020100000d0006000404010403",
+      "sha256": "c3b2bb92c90adefa3e1a271f21f05cda23681416b7a569a598ef25802d0658fa"
+    }
+  },
+  "limitations": "Framing only; TLS negotiation and server application replies are not simulated."
+}
