@@ -16,6 +16,7 @@ MUTED = '#587080'
 TEAL = '#117f7a'
 ORANGE = '#bc681c'
 RED = '#b54444'
+ARROW_COLORS = ('#275f8a', TEAL, ORANGE, RED)
 
 
 def esc(value: Any) -> str:
@@ -57,9 +58,15 @@ def text_line(x: int | float, y: int | float, value: Any, size: int = 13, fill: 
 
 
 def svg_start(width: int, height: int, title: str) -> list[str]:
+    # Explicit fills work in SVG viewers that do not support context-stroke.
+    # The page's palette selectors theme these fills and arrow strokes together.
+    markers = ''.join(
+        f'<marker id="arrow-{color[1:]}" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto">'
+        f'<path d="M0,0 L8,4 L0,8 Z" fill="{color}" stroke="none"/></marker>'
+        for color in ARROW_COLORS)
     return [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{esc(title)}">',
             f'<title>{esc(title)}</title>',
-            '<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="context-stroke"/></marker></defs>',
+            f'<defs>{markers}</defs>',
             '<style>text{font-family:Inter,Arial,Helvetica,sans-serif} .mono{font-family:ui-monospace,monospace}</style>',
             f'<rect width="{width}" height="{height}" fill="#ffffff"/>']
 
@@ -126,7 +133,7 @@ def plan_svg(plan: dict) -> str:
             x1 = 989 if server else 148
             x2 = 148 if server else 557 if dpi_only else 989
             arrow_y = y + 43
-            out.append(f'<line x1="{x1}" y1="{arrow_y}" x2="{x2}" y2="{arrow_y}" stroke="{color}" stroke-width="2.3" marker-end="url(#arrow)"/>')
+            out.append(f'<line x1="{x1}" y1="{arrow_y}" x2="{x2}" y2="{arrow_y}" stroke="{color}" stroke-width="2.3" marker-end="url(#arrow-{color[1:]})"/>')
             if dpi_only:
                 out.append(f'<line x1="570" y1="{arrow_y}" x2="969" y2="{arrow_y}" stroke="#b2bdc3" stroke-width="1.4" stroke-dasharray="6 6"/>')
                 out.append(text_line(773, y+32, 'expires before Linux', 11, MUTED, anchor='middle'))
@@ -208,7 +215,7 @@ def overview_svg(plans: list[dict], metadata: dict) -> str:
             bad = event.get('checksum') == 'invalid'
             color = RED if bad else ORANGE if dpi_only else TEAL
             start,end=(x+86,x) if server else (x,x+42 if dpi_only else x+86)
-            out.append(f'<line x1="{start}" y1="{y+65}" x2="{end}" y2="{y+65}" stroke="{color}" stroke-width="2" marker-end="url(#arrow)"/>')
+            out.append(f'<line x1="{start}" y1="{y+65}" x2="{end}" y2="{y+65}" stroke="{color}" stroke-width="2" marker-end="url(#arrow-{color[1:]})"/>')
             out.append(text_line(x+43, y+51, packet_label(event)[:17], 9, color, '700', 'middle'))
             out.append(text_line(x+43, y+83, 'DPI only' if dpi_only else 'server' if server else 'full path', 9, MUTED, anchor='middle'))
         out.append(text_line(270, y+103, 'Representative: '+str(sample.get('id',''))+' · first '+str(len(packets))+' packet events', 10, MUTED))

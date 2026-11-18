@@ -4,6 +4,8 @@ This package generates and ranks symbolic TCP measurement plans, four-way contro
 
 The pilot produced **212 distinct plans and 17 proposed bundles**. All censorship outcomes are `null` / unmeasured. See [REPORT.md](REPORT.md) for results, configuration assumptions, and incomplete exploration, and [model_notes.md](model_notes.md) for the endpoint profile.
 
+The archive extracts into `model_guided_dmap_probes/`. Packet arrowheads use explicit matching colors in both themes and in exported SVGs.
+
 ## Browse the supplied results
 
 Open [results/index.html](results/index.html) in a browser. Its plans, overview, and exchange diagrams are embedded, so it works from a local file without starting a web server. Filters expose lifecycle goal, decision family, visibility, and cost. Individual SVG and JSON downloads retain the underlying records. The Dark mode button at the top switches the entire browser, including packet diagrams, between light and dark themes. It follows your system preference initially and remembers your choice when browser storage is available.
