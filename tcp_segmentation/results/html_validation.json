@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "validation_type": "Node syntax and DOM simulation",
+  "html_sha256": "c4f06baaf23ebcd7361bb7b2746bda5a6a3192abd7f637067bc1081e6574e7ee",
+  "html_bytes": 1969698,
+  "checks": {
+    "packet_programs_preserved": 1000,
+    "sections_removed": true,
+    "stored_simulation_values_removed": true,
+    "all_views_render": true,
+    "filters_work": true,
+    "measurement_bundles_render": true,
+    "practical_controls_retained": true,
+    "back_uses_history": true,
+    "back_parent_fallback": true,
+    "dark_mode_and_persistence": true
+  },
+  "browser_limitation": "No full browser execution; validated JavaScript behavior with DOM simulation."
+}

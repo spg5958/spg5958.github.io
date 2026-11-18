@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "probes_checked": 1000,
+  "independent_tls_parser": true,
+  "literal_payloads_and_offsets": true,
+  "independent_geometry_and_holes": true,
+  "bundle_costs": true,
+  "all_observations_unmeasured": true,
+  "regressions": {
+    "future_suffix_not_a_hole": true,
+    "small_domain_bruteforce_match": true,
+    "small_domain_complete_geometries": 175
+  },
+  "limits": [
+    "Offline checks validate packet serialization, geometry, transport bounds and nominal costs only.",
+    "No live Linux TCP, real DPI, route TTL or on-wire checksum validation was performed."
+  ]
+}

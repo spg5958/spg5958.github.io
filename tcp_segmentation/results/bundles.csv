@@ -1,0 +1,6 @@
+bundle_id,title,probe_order,connections,data_packets,cost,planned_packets_with_controls_repeats
+pdf_page4,Two-connection example from the specification,S0001|S0002,2,6,14,126
+compact_pair,Compact two-connection packet bundle,S0829|S0987,2,5,13,117
+coverage_suite,Six-connection measurement bundle,S0027|S0295|S0299|S0987|S0715|S0974,6,14,38,342
+default_family,TTL-only measurement bundle,S0295|S0299|S0987|S0974|S0025,5,11,31,279
+segmented_sni,Two-connection bundle with split target SNI,S0296|S0987,2,5,13,117

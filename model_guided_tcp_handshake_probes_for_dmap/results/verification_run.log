@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "native_GreatSPN_validation": false,
+  "scope": "Independent literal-color token arithmetic over supplied PNPRO, not full GreatSPN syntax validation.",
+  "search_fixture": {
+    "contextual_repeat_costs": [
+      1,
+      3,
+      7
+    ],
+    "same_transition_name_distinct_history_cost": true
+  },
+  "model_sha256": "e4e546401ac27845eea374d68340b751c4e389f8989ac46e18405495e5c259b1",
+  "places": 75,
+  "transitions": 671,
+  "protocol_fixtures": {
+    "count": 14,
+    "checks": [
+      "VISIBILITY_S_LISTEN",
+      "CHECKSUM_S_LISTEN",
+      "VISIBILITY_CHECKSUM_S_LISTEN",
+      "unknown_server_ISN_ack_forbidden",
+      "knowledge_only_after_genuine_SYNACK",
+      "settled_establishment",
+      "DPI_only_readout_no_TCP_effect_or_reply",
+      "full_readout_ack_is_mandatory",
+      "inwindow_ack_advances_FIN_WAIT1",
+      "inwindow_ack_advances_CLOSING",
+      "ordinary_passive_close_without_wait",
+      "inwindow_ack_advances_LAST_ACK",
+      "exact_vs_inwindow_reset",
+      "retained_knowledge_and_global_incarnation_bound"
+    ]
+  },
+  "results": {
+    "paths": 1000,
+    "unique_physical_packet_sequences": 1000,
+    "conditions": 4000,
+    "goal_counts": {
+      "establish": 334,
+      "reconnect_same": 333,
+      "reconnect_different": 333
+    },
+    "cost_range": [
+      5,
+      13
+    ],
+    "literal_transition_firings": 48902,
+    "distinct_control_cost_profiles": 21
+  }
+}

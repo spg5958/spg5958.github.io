@@ -1,0 +1,682 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="3936" viewBox="0 0 1180 3936" role="img" aria-label="Lifecycle measurement coverage tree">
+<title>Lifecycle measurement coverage tree</title>
+<style>text{font-family:Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,monospace}</style>
+<rect width="1180" height="3936" fill="#ffffff"/>
+<text x="35" y="38" fill="#0c8997" font-size="13" font-weight="700" text-anchor="start">LIFECYCLE MEASUREMENT COVERAGE</text>
+<text x="35" y="74" fill="#183147" font-size="24" font-weight="700" text-anchor="start">1,000 offline plans · grouped by goal and semantic decision</text>
+<text x="35" y="104" fill="#6c7885" font-size="12" font-weight="400" text-anchor="start">Each branch shows all-group counts and a representative packet history; open an individual plan for the complete exchange.</text>
+<rect x="35" y="129" width="170" height="47" rx="8" fill="#142d3b"/>
+<text x="120" y="158" fill="#fff" font-size="14" font-weight="700" text-anchor="middle">Initial LISTEN</text>
+<path d="M120 176 V237 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="195" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="219" fill="#183147" font-size="13" font-weight="700" text-anchor="start">establish / acknowledgment_validation</text>
+<text x="1116" y="219" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">8 plans · cost 7–8</text>
+<line x1="277" y1="260" x2="363" y2="260" stroke="#0c8997" stroke-width="2"/><polygon points="363,260 355,256 355,264" fill="#0c8997"/>
+<text x="320" y="246" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="278" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="260" x2="396" y2="260" stroke="#0c8997" stroke-width="2"/><polygon points="396,260 404,256 404,264" fill="#0c8997"/>
+<text x="439" y="246" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="278" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="260" x2="601" y2="260" stroke="#0c8997" stroke-width="2"/><polygon points="601,260 593,256 593,264" fill="#0c8997"/>
+<text x="558" y="246" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="278" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="260" x2="720" y2="260" stroke="#0c8997" stroke-width="2"/><polygon points="720,260 712,256 712,264" fill="#0c8997"/>
+<text x="677" y="246" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="677" y="278" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="260" x2="795" y2="260" stroke="#c87521" stroke-width="2"/><polygon points="795,260 787,256 787,264" fill="#c87521"/>
+<text x="796" y="246" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">READOUT · PSH|ACK</text>
+<text x="796" y="278" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="872" y1="260" x2="958" y2="260" stroke="#0c8997" stroke-width="2"/><polygon points="958,260 950,256 950,264" fill="#0c8997"/>
+<text x="915" y="246" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="915" y="278" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="298" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0019 · first 6 packet events</text>
+<path d="M120 176 V375 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="333" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="357" fill="#183147" font-size="13" font-weight="700" text-anchor="start">establish / allocation</text>
+<text x="1116" y="357" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">3 plans · cost 8–8</text>
+<line x1="277" y1="398" x2="363" y2="398" stroke="#0c8997" stroke-width="2"/><polygon points="363,398 355,394 355,402" fill="#0c8997"/>
+<text x="320" y="384" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="416" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="398" x2="396" y2="398" stroke="#0c8997" stroke-width="2"/><polygon points="396,398 404,394 404,402" fill="#0c8997"/>
+<text x="439" y="384" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="416" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="398" x2="601" y2="398" stroke="#0c8997" stroke-width="2"/><polygon points="601,398 593,394 593,402" fill="#0c8997"/>
+<text x="558" y="384" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="416" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="398" x2="720" y2="398" stroke="#0c8997" stroke-width="2"/><polygon points="720,398 712,394 712,402" fill="#0c8997"/>
+<text x="677" y="384" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="416" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="839" y1="398" x2="753" y2="398" stroke="#0c8997" stroke-width="2"/><polygon points="753,398 761,394 761,402" fill="#0c8997"/>
+<text x="796" y="384" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="796" y="416" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="872" y1="398" x2="914" y2="398" stroke="#c87521" stroke-width="2"/><polygon points="914,398 906,394 906,402" fill="#c87521"/>
+<text x="915" y="384" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">READOUT · PSH|ACK</text>
+<text x="915" y="416" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="991" y1="398" x2="1077" y2="398" stroke="#0c8997" stroke-width="2"/><polygon points="1077,398 1069,394 1069,402" fill="#0c8997"/>
+<text x="1034" y="384" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="1034" y="416" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="436" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0141 · first 7 packet events</text>
+<path d="M120 176 V513 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="471" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="495" fill="#183147" font-size="13" font-weight="700" text-anchor="start">establish / checksum</text>
+<text x="1116" y="495" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">89 plans · cost 7–9</text>
+<line x1="277" y1="536" x2="363" y2="536" stroke="#0c8997" stroke-width="2"/><polygon points="363,536 355,532 355,540" fill="#0c8997"/>
+<text x="320" y="522" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="554" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="536" x2="396" y2="536" stroke="#0c8997" stroke-width="2"/><polygon points="396,536 404,532 404,540" fill="#0c8997"/>
+<text x="439" y="522" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="554" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="536" x2="601" y2="536" stroke="#0c8997" stroke-width="2"/><polygon points="601,536 593,532 593,540" fill="#0c8997"/>
+<text x="558" y="522" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="554" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="536" x2="720" y2="536" stroke="#c55858" stroke-width="2"/><polygon points="720,536 712,532 712,540" fill="#c55858"/>
+<text x="677" y="522" fill="#c55858" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="554" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="536" x2="795" y2="536" stroke="#c87521" stroke-width="2"/><polygon points="795,536 787,532 787,540" fill="#c87521"/>
+<text x="796" y="522" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">READOUT · PSH|ACK</text>
+<text x="796" y="554" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="872" y1="536" x2="958" y2="536" stroke="#0c8997" stroke-width="2"/><polygon points="958,536 950,532 950,540" fill="#0c8997"/>
+<text x="915" y="522" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="915" y="554" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="574" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0006 · first 6 packet events</text>
+<path d="M120 176 V651 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="609" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="633" fill="#183147" font-size="13" font-weight="700" text-anchor="start">establish / early_fin</text>
+<text x="1116" y="633" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">6 plans · cost 7–8</text>
+<line x1="277" y1="674" x2="363" y2="674" stroke="#0c8997" stroke-width="2"/><polygon points="363,674 355,670 355,678" fill="#0c8997"/>
+<text x="320" y="660" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="692" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="674" x2="396" y2="674" stroke="#0c8997" stroke-width="2"/><polygon points="396,674 404,670 404,678" fill="#0c8997"/>
+<text x="439" y="660" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="692" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="674" x2="601" y2="674" stroke="#0c8997" stroke-width="2"/><polygon points="601,674 593,670 593,678" fill="#0c8997"/>
+<text x="558" y="660" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">FIN|ACK</text>
+<text x="558" y="692" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="720" y1="674" x2="634" y2="674" stroke="#0c8997" stroke-width="2"/><polygon points="634,674 642,670 642,678" fill="#0c8997"/>
+<text x="677" y="660" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="677" y="692" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="753" y1="674" x2="795" y2="674" stroke="#c87521" stroke-width="2"/><polygon points="795,674 787,670 787,678" fill="#c87521"/>
+<text x="796" y="660" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">READOUT · PSH|ACK</text>
+<text x="796" y="692" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="872" y1="674" x2="958" y2="674" stroke="#0c8997" stroke-width="2"/><polygon points="958,674 950,670 950,678" fill="#0c8997"/>
+<text x="915" y="660" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="915" y="692" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="712" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0035 · first 6 packet events</text>
+<path d="M120 176 V789 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="747" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="771" fill="#183147" font-size="13" font-weight="700" text-anchor="start">establish / ordinary</text>
+<text x="1116" y="771" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">4 plans · cost 5–7</text>
+<line x1="277" y1="812" x2="363" y2="812" stroke="#0c8997" stroke-width="2"/><polygon points="363,812 355,808 355,816" fill="#0c8997"/>
+<text x="320" y="798" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="830" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="812" x2="396" y2="812" stroke="#0c8997" stroke-width="2"/><polygon points="396,812 404,808 404,816" fill="#0c8997"/>
+<text x="439" y="798" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="830" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="812" x2="601" y2="812" stroke="#0c8997" stroke-width="2"/><polygon points="601,812 593,808 593,816" fill="#0c8997"/>
+<text x="558" y="798" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="830" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="812" x2="676" y2="812" stroke="#c87521" stroke-width="2"/><polygon points="676,812 668,808 668,816" fill="#c87521"/>
+<text x="677" y="798" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">READOUT · PSH|ACK</text>
+<text x="677" y="830" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="753" y1="812" x2="839" y2="812" stroke="#0c8997" stroke-width="2"/><polygon points="839,812 831,808 831,816" fill="#0c8997"/>
+<text x="796" y="798" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="830" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="850" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0001 · first 5 packet events</text>
+<path d="M120 176 V927 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="885" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="909" fill="#183147" font-size="13" font-weight="700" text-anchor="start">establish / reset</text>
+<text x="1116" y="909" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">13 plans · cost 7–8</text>
+<line x1="277" y1="950" x2="363" y2="950" stroke="#0c8997" stroke-width="2"/><polygon points="363,950 355,946 355,954" fill="#0c8997"/>
+<text x="320" y="936" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="968" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="950" x2="396" y2="950" stroke="#0c8997" stroke-width="2"/><polygon points="396,950 404,946 404,954" fill="#0c8997"/>
+<text x="439" y="936" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="968" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="950" x2="601" y2="950" stroke="#0c8997" stroke-width="2"/><polygon points="601,950 593,946 593,954" fill="#0c8997"/>
+<text x="558" y="936" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="968" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="950" x2="720" y2="950" stroke="#0c8997" stroke-width="2"/><polygon points="720,950 712,946 712,954" fill="#0c8997"/>
+<text x="677" y="936" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="677" y="968" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="950" x2="795" y2="950" stroke="#c87521" stroke-width="2"/><polygon points="795,950 787,946 787,954" fill="#c87521"/>
+<text x="796" y="936" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">READOUT · PSH|ACK</text>
+<text x="796" y="968" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="872" y1="950" x2="958" y2="950" stroke="#0c8997" stroke-width="2"/><polygon points="958,950 950,946 950,954" fill="#0c8997"/>
+<text x="915" y="936" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="915" y="968" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="988" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0017 · first 6 packet events</text>
+<path d="M120 176 V1065 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="1023" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="1047" fill="#183147" font-size="13" font-weight="700" text-anchor="start">establish / sequence_validation</text>
+<text x="1116" y="1047" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">27 plans · cost 6–8</text>
+<line x1="277" y1="1088" x2="363" y2="1088" stroke="#0c8997" stroke-width="2"/><polygon points="363,1088 355,1084 355,1092" fill="#0c8997"/>
+<text x="320" y="1074" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="1106" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="1088" x2="396" y2="1088" stroke="#0c8997" stroke-width="2"/><polygon points="396,1088 404,1084 404,1092" fill="#0c8997"/>
+<text x="439" y="1074" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="1106" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="1088" x2="601" y2="1088" stroke="#0c8997" stroke-width="2"/><polygon points="601,1088 593,1084 593,1092" fill="#0c8997"/>
+<text x="558" y="1074" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="1106" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="1088" x2="676" y2="1088" stroke="#c87521" stroke-width="2"/><polygon points="676,1088 668,1084 668,1092" fill="#c87521"/>
+<text x="677" y="1074" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">READOUT · PSH|ACK</text>
+<text x="677" y="1106" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="753" y1="1088" x2="839" y2="1088" stroke="#0c8997" stroke-width="2"/><polygon points="839,1088 831,1084 831,1092" fill="#0c8997"/>
+<text x="796" y="1074" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="1106" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="1126" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0002 · first 5 packet events</text>
+<path d="M120 176 V1203 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="1161" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="1185" fill="#183147" font-size="13" font-weight="700" text-anchor="start">establish / visibility</text>
+<text x="1116" y="1185" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">95 plans · cost 7–9</text>
+<line x1="277" y1="1226" x2="363" y2="1226" stroke="#0c8997" stroke-width="2"/><polygon points="363,1226 355,1222 355,1230" fill="#0c8997"/>
+<text x="320" y="1212" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="1244" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="1226" x2="396" y2="1226" stroke="#0c8997" stroke-width="2"/><polygon points="396,1226 404,1222 404,1230" fill="#0c8997"/>
+<text x="439" y="1212" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="1244" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="1226" x2="601" y2="1226" stroke="#0c8997" stroke-width="2"/><polygon points="601,1226 593,1222 593,1230" fill="#0c8997"/>
+<text x="558" y="1212" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="1244" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="1226" x2="676" y2="1226" stroke="#c87521" stroke-width="2"/><polygon points="676,1226 668,1222 668,1230" fill="#c87521"/>
+<text x="677" y="1212" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="1244" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="753" y1="1226" x2="795" y2="1226" stroke="#c87521" stroke-width="2"/><polygon points="795,1226 787,1222 787,1230" fill="#c87521"/>
+<text x="796" y="1212" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">READOUT · PSH|ACK</text>
+<text x="796" y="1244" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="872" y1="1226" x2="958" y2="1226" stroke="#0c8997" stroke-width="2"/><polygon points="958,1226 950,1222 950,1230" fill="#0c8997"/>
+<text x="915" y="1212" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="915" y="1244" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="1264" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0005 · first 6 packet events</text>
+<path d="M120 176 V1341 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="1299" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="1323" fill="#183147" font-size="13" font-weight="700" text-anchor="start">establish / visibility_checksum</text>
+<text x="1116" y="1323" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">89 plans · cost 7–9</text>
+<line x1="277" y1="1364" x2="363" y2="1364" stroke="#0c8997" stroke-width="2"/><polygon points="363,1364 355,1360 355,1368" fill="#0c8997"/>
+<text x="320" y="1350" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="1382" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="1364" x2="396" y2="1364" stroke="#0c8997" stroke-width="2"/><polygon points="396,1364 404,1360 404,1368" fill="#0c8997"/>
+<text x="439" y="1350" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="1382" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="1364" x2="601" y2="1364" stroke="#0c8997" stroke-width="2"/><polygon points="601,1364 593,1360 593,1368" fill="#0c8997"/>
+<text x="558" y="1350" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="1382" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="1364" x2="676" y2="1364" stroke="#c55858" stroke-width="2"/><polygon points="676,1364 668,1360 668,1368" fill="#c55858"/>
+<text x="677" y="1350" fill="#c55858" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="1382" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="753" y1="1364" x2="795" y2="1364" stroke="#c87521" stroke-width="2"/><polygon points="795,1364 787,1360 787,1368" fill="#c87521"/>
+<text x="796" y="1350" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">READOUT · PSH|ACK</text>
+<text x="796" y="1382" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="872" y1="1364" x2="958" y2="1364" stroke="#0c8997" stroke-width="2"/><polygon points="958,1364 950,1360 950,1368" fill="#0c8997"/>
+<text x="915" y="1350" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="915" y="1382" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="1402" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0007 · first 6 packet events</text>
+<path d="M120 176 V1479 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="1437" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="1461" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_different / acknowledgment_validation</text>
+<text x="1116" y="1461" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">12 plans · cost 12–12</text>
+<line x1="277" y1="1502" x2="363" y2="1502" stroke="#0c8997" stroke-width="2"/><polygon points="363,1502 355,1498 355,1506" fill="#0c8997"/>
+<text x="320" y="1488" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="1520" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="1502" x2="396" y2="1502" stroke="#0c8997" stroke-width="2"/><polygon points="396,1502 404,1498 404,1506" fill="#0c8997"/>
+<text x="439" y="1488" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="1520" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="1502" x2="601" y2="1502" stroke="#0c8997" stroke-width="2"/><polygon points="601,1502 593,1498 593,1506" fill="#0c8997"/>
+<text x="558" y="1488" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="1520" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="1502" x2="720" y2="1502" stroke="#0c8997" stroke-width="2"/><polygon points="720,1502 712,1498 712,1506" fill="#0c8997"/>
+<text x="677" y="1488" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="677" y="1520" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="1502" x2="839" y2="1502" stroke="#0c8997" stroke-width="2"/><polygon points="839,1502 831,1498 831,1506" fill="#0c8997"/>
+<text x="796" y="1488" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="1520" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="1502" x2="958" y2="1502" stroke="#0c8997" stroke-width="2"/><polygon points="958,1502 950,1498 950,1506" fill="#0c8997"/>
+<text x="915" y="1488" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="1520" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="1502" x2="991" y2="1502" stroke="#0c8997" stroke-width="2"/><polygon points="991,1502 999,1498 999,1506" fill="#0c8997"/>
+<text x="1034" y="1488" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="1520" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="1540" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0756 · first 7 packet events</text>
+<path d="M120 176 V1617 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="1575" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="1599" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_different / checksum</text>
+<text x="1116" y="1599" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">58 plans · cost 12–12</text>
+<line x1="277" y1="1640" x2="363" y2="1640" stroke="#0c8997" stroke-width="2"/><polygon points="363,1640 355,1636 355,1644" fill="#0c8997"/>
+<text x="320" y="1626" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="1658" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="1640" x2="396" y2="1640" stroke="#0c8997" stroke-width="2"/><polygon points="396,1640 404,1636 404,1644" fill="#0c8997"/>
+<text x="439" y="1626" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="1658" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="1640" x2="601" y2="1640" stroke="#0c8997" stroke-width="2"/><polygon points="601,1640 593,1636 593,1644" fill="#0c8997"/>
+<text x="558" y="1626" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="1658" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="1640" x2="720" y2="1640" stroke="#c55858" stroke-width="2"/><polygon points="720,1640 712,1636 712,1644" fill="#c55858"/>
+<text x="677" y="1626" fill="#c55858" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="1658" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="1640" x2="839" y2="1640" stroke="#0c8997" stroke-width="2"/><polygon points="839,1640 831,1636 831,1644" fill="#0c8997"/>
+<text x="796" y="1626" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="1658" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="1640" x2="958" y2="1640" stroke="#0c8997" stroke-width="2"/><polygon points="958,1640 950,1636 950,1644" fill="#0c8997"/>
+<text x="915" y="1626" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="1658" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="1640" x2="991" y2="1640" stroke="#0c8997" stroke-width="2"/><polygon points="991,1640 999,1636 999,1644" fill="#0c8997"/>
+<text x="1034" y="1626" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="1658" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="1678" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0743 · first 7 packet events</text>
+<path d="M120 176 V1755 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="1713" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="1737" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_different / early_fin</text>
+<text x="1116" y="1737" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">3 plans · cost 12–12</text>
+<line x1="277" y1="1778" x2="363" y2="1778" stroke="#0c8997" stroke-width="2"/><polygon points="363,1778 355,1774 355,1782" fill="#0c8997"/>
+<text x="320" y="1764" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="1796" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="1778" x2="396" y2="1778" stroke="#0c8997" stroke-width="2"/><polygon points="396,1778 404,1774 404,1782" fill="#0c8997"/>
+<text x="439" y="1764" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="1796" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="1778" x2="601" y2="1778" stroke="#0c8997" stroke-width="2"/><polygon points="601,1778 593,1774 593,1782" fill="#0c8997"/>
+<text x="558" y="1764" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">FIN|ACK</text>
+<text x="558" y="1796" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="720" y1="1778" x2="634" y2="1778" stroke="#0c8997" stroke-width="2"/><polygon points="634,1778 642,1774 642,1782" fill="#0c8997"/>
+<text x="677" y="1764" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="677" y="1796" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="753" y1="1778" x2="839" y2="1778" stroke="#0c8997" stroke-width="2"/><polygon points="839,1778 831,1774 831,1782" fill="#0c8997"/>
+<text x="796" y="1764" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="1796" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="1778" x2="958" y2="1778" stroke="#0c8997" stroke-width="2"/><polygon points="958,1778 950,1774 950,1782" fill="#0c8997"/>
+<text x="915" y="1764" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="1796" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="1778" x2="991" y2="1778" stroke="#0c8997" stroke-width="2"/><polygon points="991,1778 999,1774 999,1782" fill="#0c8997"/>
+<text x="1034" y="1764" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="1796" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="1816" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0771 · first 7 packet events</text>
+<path d="M120 176 V1893 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="1851" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="1875" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_different / incarnation</text>
+<text x="1116" y="1875" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">4 plans · cost 12–12</text>
+<line x1="277" y1="1916" x2="363" y2="1916" stroke="#0c8997" stroke-width="2"/><polygon points="363,1916 355,1912 355,1920" fill="#0c8997"/>
+<text x="320" y="1902" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="1934" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="1916" x2="396" y2="1916" stroke="#0c8997" stroke-width="2"/><polygon points="396,1916 404,1912 404,1920" fill="#0c8997"/>
+<text x="439" y="1902" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="1934" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="1916" x2="601" y2="1916" stroke="#0c8997" stroke-width="2"/><polygon points="601,1916 593,1912 593,1920" fill="#0c8997"/>
+<text x="558" y="1902" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="1934" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="720" y1="1916" x2="634" y2="1916" stroke="#0c8997" stroke-width="2"/><polygon points="634,1916 642,1912 642,1920" fill="#0c8997"/>
+<text x="677" y="1902" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">FIN|ACK</text>
+<text x="677" y="1934" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="753" y1="1916" x2="839" y2="1916" stroke="#0c8997" stroke-width="2"/><polygon points="839,1916 831,1912 831,1920" fill="#0c8997"/>
+<text x="796" y="1902" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="796" y="1934" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="958" y1="1916" x2="872" y2="1916" stroke="#0c8997" stroke-width="2"/><polygon points="872,1916 880,1912 880,1920" fill="#0c8997"/>
+<text x="915" y="1902" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="915" y="1934" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="991" y1="1916" x2="1077" y2="1916" stroke="#0c8997" stroke-width="2"/><polygon points="1077,1916 1069,1912 1069,1920" fill="#0c8997"/>
+<text x="1034" y="1902" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="1034" y="1934" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="1954" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0871 · first 7 packet events</text>
+<path d="M120 176 V2031 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="1989" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="2013" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_different / ordinary</text>
+<text x="1116" y="2013" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">17 plans · cost 10–12</text>
+<line x1="277" y1="2054" x2="363" y2="2054" stroke="#0c8997" stroke-width="2"/><polygon points="363,2054 355,2050 355,2058" fill="#0c8997"/>
+<text x="320" y="2040" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="2072" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="2054" x2="396" y2="2054" stroke="#0c8997" stroke-width="2"/><polygon points="396,2054 404,2050 404,2058" fill="#0c8997"/>
+<text x="439" y="2040" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="2072" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="2054" x2="601" y2="2054" stroke="#0c8997" stroke-width="2"/><polygon points="601,2054 593,2050 593,2058" fill="#0c8997"/>
+<text x="558" y="2040" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="2072" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="720" y1="2054" x2="634" y2="2054" stroke="#0c8997" stroke-width="2"/><polygon points="634,2054 642,2050 642,2058" fill="#0c8997"/>
+<text x="677" y="2040" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">FIN|ACK</text>
+<text x="677" y="2072" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="753" y1="2054" x2="839" y2="2054" stroke="#0c8997" stroke-width="2"/><polygon points="839,2054 831,2050 831,2058" fill="#0c8997"/>
+<text x="796" y="2040" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="796" y="2072" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="958" y1="2054" x2="872" y2="2054" stroke="#0c8997" stroke-width="2"/><polygon points="872,2054 880,2050 880,2058" fill="#0c8997"/>
+<text x="915" y="2040" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="915" y="2072" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="991" y1="2054" x2="1077" y2="2054" stroke="#0c8997" stroke-width="2"/><polygon points="1077,2054 1069,2050 1069,2058" fill="#0c8997"/>
+<text x="1034" y="2040" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="1034" y="2072" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="2092" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0669 · first 7 packet events</text>
+<path d="M120 176 V2169 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="2127" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="2151" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_different / reset</text>
+<text x="1116" y="2151" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">82 plans · cost 10–12</text>
+<line x1="277" y1="2192" x2="363" y2="2192" stroke="#0c8997" stroke-width="2"/><polygon points="363,2192 355,2188 355,2196" fill="#0c8997"/>
+<text x="320" y="2178" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="2210" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="2192" x2="396" y2="2192" stroke="#0c8997" stroke-width="2"/><polygon points="396,2192 404,2188 404,2196" fill="#0c8997"/>
+<text x="439" y="2178" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="2210" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="2192" x2="601" y2="2192" stroke="#0c8997" stroke-width="2"/><polygon points="601,2192 593,2188 593,2196" fill="#0c8997"/>
+<text x="558" y="2178" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="2210" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="2192" x2="720" y2="2192" stroke="#0c8997" stroke-width="2"/><polygon points="720,2192 712,2188 712,2196" fill="#0c8997"/>
+<text x="677" y="2178" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="677" y="2210" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="2192" x2="839" y2="2192" stroke="#0c8997" stroke-width="2"/><polygon points="839,2192 831,2188 831,2196" fill="#0c8997"/>
+<text x="796" y="2178" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="796" y="2210" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="958" y1="2192" x2="872" y2="2192" stroke="#0c8997" stroke-width="2"/><polygon points="872,2192 880,2188 880,2196" fill="#0c8997"/>
+<text x="915" y="2178" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="915" y="2210" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="991" y1="2192" x2="1077" y2="2192" stroke="#0c8997" stroke-width="2"/><polygon points="1077,2192 1069,2188 1069,2196" fill="#0c8997"/>
+<text x="1034" y="2178" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="1034" y="2210" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="2230" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0668 · first 7 packet events</text>
+<path d="M120 176 V2307 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="2265" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="2289" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_different / sequence_validation</text>
+<text x="1116" y="2289" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">40 plans · cost 11–12</text>
+<line x1="277" y1="2330" x2="363" y2="2330" stroke="#0c8997" stroke-width="2"/><polygon points="363,2330 355,2326 355,2334" fill="#0c8997"/>
+<text x="320" y="2316" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="2348" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="2330" x2="396" y2="2330" stroke="#0c8997" stroke-width="2"/><polygon points="396,2330 404,2326 404,2334" fill="#0c8997"/>
+<text x="439" y="2316" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="2348" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="2330" x2="601" y2="2330" stroke="#0c8997" stroke-width="2"/><polygon points="601,2330 593,2326 593,2334" fill="#0c8997"/>
+<text x="558" y="2316" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="2348" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="2330" x2="720" y2="2330" stroke="#0c8997" stroke-width="2"/><polygon points="720,2330 712,2326 712,2334" fill="#0c8997"/>
+<text x="677" y="2316" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="677" y="2348" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="2330" x2="839" y2="2330" stroke="#0c8997" stroke-width="2"/><polygon points="839,2330 831,2326 831,2334" fill="#0c8997"/>
+<text x="796" y="2316" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="796" y="2348" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="958" y1="2330" x2="872" y2="2330" stroke="#0c8997" stroke-width="2"/><polygon points="872,2330 880,2326 880,2334" fill="#0c8997"/>
+<text x="915" y="2316" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="915" y="2348" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="991" y1="2330" x2="1077" y2="2330" stroke="#0c8997" stroke-width="2"/><polygon points="1077,2330 1069,2326 1069,2334" fill="#0c8997"/>
+<text x="1034" y="2316" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="1034" y="2348" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="2368" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0672 · first 7 packet events</text>
+<path d="M120 176 V2445 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="2403" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="2427" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_different / visibility</text>
+<text x="1116" y="2427" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">59 plans · cost 12–12</text>
+<line x1="277" y1="2468" x2="363" y2="2468" stroke="#0c8997" stroke-width="2"/><polygon points="363,2468 355,2464 355,2472" fill="#0c8997"/>
+<text x="320" y="2454" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="2486" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="2468" x2="396" y2="2468" stroke="#0c8997" stroke-width="2"/><polygon points="396,2468 404,2464 404,2472" fill="#0c8997"/>
+<text x="439" y="2454" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="2486" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="2468" x2="601" y2="2468" stroke="#0c8997" stroke-width="2"/><polygon points="601,2468 593,2464 593,2472" fill="#0c8997"/>
+<text x="558" y="2454" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="2486" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="2468" x2="676" y2="2468" stroke="#c87521" stroke-width="2"/><polygon points="676,2468 668,2464 668,2472" fill="#c87521"/>
+<text x="677" y="2454" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="2486" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="753" y1="2468" x2="839" y2="2468" stroke="#0c8997" stroke-width="2"/><polygon points="839,2468 831,2464 831,2472" fill="#0c8997"/>
+<text x="796" y="2454" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="2486" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="2468" x2="958" y2="2468" stroke="#0c8997" stroke-width="2"/><polygon points="958,2468 950,2464 950,2472" fill="#0c8997"/>
+<text x="915" y="2454" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="2486" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="2468" x2="991" y2="2468" stroke="#0c8997" stroke-width="2"/><polygon points="991,2468 999,2464 999,2472" fill="#0c8997"/>
+<text x="1034" y="2454" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="2486" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="2506" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0742 · first 7 packet events</text>
+<path d="M120 176 V2583 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="2541" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="2565" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_different / visibility_checksum</text>
+<text x="1116" y="2565" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">58 plans · cost 12–12</text>
+<line x1="277" y1="2606" x2="363" y2="2606" stroke="#0c8997" stroke-width="2"/><polygon points="363,2606 355,2602 355,2610" fill="#0c8997"/>
+<text x="320" y="2592" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="2624" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="2606" x2="396" y2="2606" stroke="#0c8997" stroke-width="2"/><polygon points="396,2606 404,2602 404,2610" fill="#0c8997"/>
+<text x="439" y="2592" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="2624" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="2606" x2="601" y2="2606" stroke="#0c8997" stroke-width="2"/><polygon points="601,2606 593,2602 593,2610" fill="#0c8997"/>
+<text x="558" y="2592" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="2624" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="2606" x2="676" y2="2606" stroke="#c55858" stroke-width="2"/><polygon points="676,2606 668,2602 668,2610" fill="#c55858"/>
+<text x="677" y="2592" fill="#c55858" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="2624" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="753" y1="2606" x2="839" y2="2606" stroke="#0c8997" stroke-width="2"/><polygon points="839,2606 831,2602 831,2610" fill="#0c8997"/>
+<text x="796" y="2592" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="2624" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="2606" x2="958" y2="2606" stroke="#0c8997" stroke-width="2"/><polygon points="958,2606 950,2602 950,2610" fill="#0c8997"/>
+<text x="915" y="2592" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="2624" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="2606" x2="991" y2="2606" stroke="#0c8997" stroke-width="2"/><polygon points="991,2606 999,2602 999,2610" fill="#0c8997"/>
+<text x="1034" y="2592" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="2624" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="2644" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0744 · first 7 packet events</text>
+<path d="M120 176 V2721 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="2679" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="2703" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_same / acknowledgment_validation</text>
+<text x="1116" y="2703" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">8 plans · cost 12–13</text>
+<line x1="277" y1="2744" x2="363" y2="2744" stroke="#0c8997" stroke-width="2"/><polygon points="363,2744 355,2740 355,2748" fill="#0c8997"/>
+<text x="320" y="2730" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="2762" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="2744" x2="396" y2="2744" stroke="#0c8997" stroke-width="2"/><polygon points="396,2744 404,2740 404,2748" fill="#0c8997"/>
+<text x="439" y="2730" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="2762" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="2744" x2="601" y2="2744" stroke="#0c8997" stroke-width="2"/><polygon points="601,2744 593,2740 593,2748" fill="#0c8997"/>
+<text x="558" y="2730" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="2762" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="2744" x2="720" y2="2744" stroke="#0c8997" stroke-width="2"/><polygon points="720,2744 712,2740 712,2748" fill="#0c8997"/>
+<text x="677" y="2730" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="677" y="2762" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="2744" x2="839" y2="2744" stroke="#0c8997" stroke-width="2"/><polygon points="839,2744 831,2740 831,2748" fill="#0c8997"/>
+<text x="796" y="2730" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="2762" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="2744" x2="958" y2="2744" stroke="#0c8997" stroke-width="2"/><polygon points="958,2744 950,2740 950,2748" fill="#0c8997"/>
+<text x="915" y="2730" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="2762" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="2744" x2="991" y2="2744" stroke="#0c8997" stroke-width="2"/><polygon points="991,2744 999,2740 999,2748" fill="#0c8997"/>
+<text x="1034" y="2730" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="2762" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="2782" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0402 · first 7 packet events</text>
+<path d="M120 176 V2859 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="2817" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="2841" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_same / allocation</text>
+<text x="1116" y="2841" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">3 plans · cost 13–13</text>
+<line x1="277" y1="2882" x2="363" y2="2882" stroke="#0c8997" stroke-width="2"/><polygon points="363,2882 355,2878 355,2886" fill="#0c8997"/>
+<text x="320" y="2868" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="2900" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="2882" x2="396" y2="2882" stroke="#0c8997" stroke-width="2"/><polygon points="396,2882 404,2878 404,2886" fill="#0c8997"/>
+<text x="439" y="2868" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="2900" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="2882" x2="601" y2="2882" stroke="#0c8997" stroke-width="2"/><polygon points="601,2882 593,2878 593,2886" fill="#0c8997"/>
+<text x="558" y="2868" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="2900" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="2882" x2="720" y2="2882" stroke="#0c8997" stroke-width="2"/><polygon points="720,2882 712,2878 712,2886" fill="#0c8997"/>
+<text x="677" y="2868" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="2900" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="839" y1="2882" x2="753" y2="2882" stroke="#0c8997" stroke-width="2"/><polygon points="753,2882 761,2878 761,2886" fill="#0c8997"/>
+<text x="796" y="2868" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="796" y="2900" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="872" y1="2882" x2="958" y2="2882" stroke="#0c8997" stroke-width="2"/><polygon points="958,2882 950,2878 950,2886" fill="#0c8997"/>
+<text x="915" y="2868" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="915" y="2900" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="991" y1="2882" x2="1077" y2="2882" stroke="#0c8997" stroke-width="2"/><polygon points="1077,2882 1069,2878 1069,2886" fill="#0c8997"/>
+<text x="1034" y="2868" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="1034" y="2900" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="2920" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0551 · first 7 packet events</text>
+<path d="M120 176 V2997 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="2955" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="2979" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_same / checksum</text>
+<text x="1116" y="2979" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">35 plans · cost 12–13</text>
+<line x1="277" y1="3020" x2="363" y2="3020" stroke="#0c8997" stroke-width="2"/><polygon points="363,3020 355,3016 355,3024" fill="#0c8997"/>
+<text x="320" y="3006" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="3038" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="3020" x2="396" y2="3020" stroke="#0c8997" stroke-width="2"/><polygon points="396,3020 404,3016 404,3024" fill="#0c8997"/>
+<text x="439" y="3006" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="3038" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="3020" x2="601" y2="3020" stroke="#0c8997" stroke-width="2"/><polygon points="601,3020 593,3016 593,3024" fill="#0c8997"/>
+<text x="558" y="3006" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="3038" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="3020" x2="720" y2="3020" stroke="#c55858" stroke-width="2"/><polygon points="720,3020 712,3016 712,3024" fill="#c55858"/>
+<text x="677" y="3006" fill="#c55858" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="3038" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="3020" x2="839" y2="3020" stroke="#0c8997" stroke-width="2"/><polygon points="839,3020 831,3016 831,3024" fill="#0c8997"/>
+<text x="796" y="3006" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="3038" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="3020" x2="958" y2="3020" stroke="#0c8997" stroke-width="2"/><polygon points="958,3020 950,3016 950,3024" fill="#0c8997"/>
+<text x="915" y="3006" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="3038" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="3020" x2="991" y2="3020" stroke="#0c8997" stroke-width="2"/><polygon points="991,3020 999,3016 999,3024" fill="#0c8997"/>
+<text x="1034" y="3006" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="3038" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="3058" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0389 · first 7 packet events</text>
+<path d="M120 176 V3135 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="3093" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="3117" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_same / early_fin</text>
+<text x="1116" y="3117" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">6 plans · cost 12–13</text>
+<line x1="277" y1="3158" x2="363" y2="3158" stroke="#0c8997" stroke-width="2"/><polygon points="363,3158 355,3154 355,3162" fill="#0c8997"/>
+<text x="320" y="3144" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="3176" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="3158" x2="396" y2="3158" stroke="#0c8997" stroke-width="2"/><polygon points="396,3158 404,3154 404,3162" fill="#0c8997"/>
+<text x="439" y="3144" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="3176" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="3158" x2="601" y2="3158" stroke="#0c8997" stroke-width="2"/><polygon points="601,3158 593,3154 593,3162" fill="#0c8997"/>
+<text x="558" y="3144" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">FIN|ACK</text>
+<text x="558" y="3176" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="720" y1="3158" x2="634" y2="3158" stroke="#0c8997" stroke-width="2"/><polygon points="634,3158 642,3154 642,3162" fill="#0c8997"/>
+<text x="677" y="3144" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="677" y="3176" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="753" y1="3158" x2="839" y2="3158" stroke="#0c8997" stroke-width="2"/><polygon points="839,3158 831,3154 831,3162" fill="#0c8997"/>
+<text x="796" y="3144" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="3176" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="3158" x2="958" y2="3158" stroke="#0c8997" stroke-width="2"/><polygon points="958,3158 950,3154 950,3162" fill="#0c8997"/>
+<text x="915" y="3144" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="3176" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="3158" x2="991" y2="3158" stroke="#0c8997" stroke-width="2"/><polygon points="991,3158 999,3154 999,3162" fill="#0c8997"/>
+<text x="1034" y="3144" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="3176" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="3196" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0417 · first 7 packet events</text>
+<path d="M120 176 V3273 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="3231" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="3255" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_same / ordinary</text>
+<text x="1116" y="3255" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">2 plans · cost 12–12</text>
+<line x1="277" y1="3296" x2="363" y2="3296" stroke="#0c8997" stroke-width="2"/><polygon points="363,3296 355,3292 355,3300" fill="#0c8997"/>
+<text x="320" y="3282" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="3314" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="3296" x2="396" y2="3296" stroke="#0c8997" stroke-width="2"/><polygon points="396,3296 404,3292 404,3300" fill="#0c8997"/>
+<text x="439" y="3282" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="3314" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="3296" x2="601" y2="3296" stroke="#0c8997" stroke-width="2"/><polygon points="601,3296 593,3292 593,3300" fill="#0c8997"/>
+<text x="558" y="3282" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="3314" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="720" y1="3296" x2="634" y2="3296" stroke="#0c8997" stroke-width="2"/><polygon points="634,3296 642,3292 642,3300" fill="#0c8997"/>
+<text x="677" y="3282" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">FIN|ACK</text>
+<text x="677" y="3314" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="753" y1="3296" x2="839" y2="3296" stroke="#0c8997" stroke-width="2"/><polygon points="839,3296 831,3292 831,3300" fill="#0c8997"/>
+<text x="796" y="3282" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">FIN|ACK</text>
+<text x="796" y="3314" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="958" y1="3296" x2="872" y2="3296" stroke="#0c8997" stroke-width="2"/><polygon points="872,3296 880,3292 880,3300" fill="#0c8997"/>
+<text x="915" y="3282" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="915" y="3314" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="991" y1="3296" x2="1077" y2="3296" stroke="#0c8997" stroke-width="2"/><polygon points="1077,3296 1069,3292 1069,3300" fill="#0c8997"/>
+<text x="1034" y="3282" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="1034" y="3314" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="3334" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0440 · first 7 packet events</text>
+<path d="M120 176 V3411 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="3369" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="3393" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_same / reset</text>
+<text x="1116" y="3393" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">196 plans · cost 10–13</text>
+<line x1="277" y1="3434" x2="363" y2="3434" stroke="#0c8997" stroke-width="2"/><polygon points="363,3434 355,3430 355,3438" fill="#0c8997"/>
+<text x="320" y="3420" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="3452" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="3434" x2="396" y2="3434" stroke="#0c8997" stroke-width="2"/><polygon points="396,3434 404,3430 404,3438" fill="#0c8997"/>
+<text x="439" y="3420" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="3452" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="3434" x2="601" y2="3434" stroke="#0c8997" stroke-width="2"/><polygon points="601,3434 593,3430 593,3438" fill="#0c8997"/>
+<text x="558" y="3420" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="3452" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="3434" x2="720" y2="3434" stroke="#0c8997" stroke-width="2"/><polygon points="720,3434 712,3430 712,3438" fill="#0c8997"/>
+<text x="677" y="3420" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="677" y="3452" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="3434" x2="839" y2="3434" stroke="#0c8997" stroke-width="2"/><polygon points="839,3434 831,3430 831,3438" fill="#0c8997"/>
+<text x="796" y="3420" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="796" y="3452" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="958" y1="3434" x2="872" y2="3434" stroke="#0c8997" stroke-width="2"/><polygon points="872,3434 880,3430 880,3438" fill="#0c8997"/>
+<text x="915" y="3420" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="915" y="3452" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="991" y1="3434" x2="1077" y2="3434" stroke="#0c8997" stroke-width="2"/><polygon points="1077,3434 1069,3430 1069,3438" fill="#0c8997"/>
+<text x="1034" y="3420" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="1034" y="3452" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="3472" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0335 · first 7 packet events</text>
+<path d="M120 176 V3549 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="3507" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="3531" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_same / sequence_validation</text>
+<text x="1116" y="3531" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">14 plans · cost 11–13</text>
+<line x1="277" y1="3572" x2="363" y2="3572" stroke="#0c8997" stroke-width="2"/><polygon points="363,3572 355,3568 355,3576" fill="#0c8997"/>
+<text x="320" y="3558" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="3590" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="3572" x2="396" y2="3572" stroke="#0c8997" stroke-width="2"/><polygon points="396,3572 404,3568 404,3576" fill="#0c8997"/>
+<text x="439" y="3558" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="3590" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="3572" x2="601" y2="3572" stroke="#0c8997" stroke-width="2"/><polygon points="601,3572 593,3568 593,3576" fill="#0c8997"/>
+<text x="558" y="3558" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="3590" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="3572" x2="720" y2="3572" stroke="#0c8997" stroke-width="2"/><polygon points="720,3572 712,3568 712,3576" fill="#0c8997"/>
+<text x="677" y="3558" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="677" y="3590" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="753" y1="3572" x2="839" y2="3572" stroke="#0c8997" stroke-width="2"/><polygon points="839,3572 831,3568 831,3576" fill="#0c8997"/>
+<text x="796" y="3558" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="796" y="3590" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="958" y1="3572" x2="872" y2="3572" stroke="#0c8997" stroke-width="2"/><polygon points="872,3572 880,3568 880,3576" fill="#0c8997"/>
+<text x="915" y="3558" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="915" y="3590" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="991" y1="3572" x2="1077" y2="3572" stroke="#0c8997" stroke-width="2"/><polygon points="1077,3572 1069,3568 1069,3576" fill="#0c8997"/>
+<text x="1034" y="3558" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="1034" y="3590" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<text x="270" y="3610" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0337 · first 7 packet events</text>
+<path d="M120 176 V3687 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="3645" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="3669" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_same / visibility</text>
+<text x="1116" y="3669" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">35 plans · cost 12–13</text>
+<line x1="277" y1="3710" x2="363" y2="3710" stroke="#0c8997" stroke-width="2"/><polygon points="363,3710 355,3706 355,3714" fill="#0c8997"/>
+<text x="320" y="3696" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="3728" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="3710" x2="396" y2="3710" stroke="#0c8997" stroke-width="2"/><polygon points="396,3710 404,3706 404,3714" fill="#0c8997"/>
+<text x="439" y="3696" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="3728" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="3710" x2="601" y2="3710" stroke="#0c8997" stroke-width="2"/><polygon points="601,3710 593,3706 593,3714" fill="#0c8997"/>
+<text x="558" y="3696" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="3728" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="3710" x2="676" y2="3710" stroke="#c87521" stroke-width="2"/><polygon points="676,3710 668,3706 668,3714" fill="#c87521"/>
+<text x="677" y="3696" fill="#c87521" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="3728" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="753" y1="3710" x2="839" y2="3710" stroke="#0c8997" stroke-width="2"/><polygon points="839,3710 831,3706 831,3714" fill="#0c8997"/>
+<text x="796" y="3696" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="3728" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="3710" x2="958" y2="3710" stroke="#0c8997" stroke-width="2"/><polygon points="958,3710 950,3706 950,3714" fill="#0c8997"/>
+<text x="915" y="3696" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="3728" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="3710" x2="991" y2="3710" stroke="#0c8997" stroke-width="2"/><polygon points="991,3710 999,3706 999,3714" fill="#0c8997"/>
+<text x="1034" y="3696" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="3728" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="3748" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0388 · first 7 packet events</text>
+<path d="M120 176 V3825 H248" fill="none" stroke="#c2d0d6" stroke-width="1.6"/>
+<rect x="248" y="3783" width="890" height="118" rx="9" fill="#f5f8fa" stroke="#d9e3e7"/>
+<text x="270" y="3807" fill="#183147" font-size="13" font-weight="700" text-anchor="start">reconnect_same / visibility_checksum</text>
+<text x="1116" y="3807" fill="#6c7885" font-size="12" font-weight="400" text-anchor="end">34 plans · cost 12–13</text>
+<line x1="277" y1="3848" x2="363" y2="3848" stroke="#0c8997" stroke-width="2"/><polygon points="363,3848 355,3844 355,3852" fill="#0c8997"/>
+<text x="320" y="3834" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="320" y="3866" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="482" y1="3848" x2="396" y2="3848" stroke="#0c8997" stroke-width="2"/><polygon points="396,3848 404,3844 404,3852" fill="#0c8997"/>
+<text x="439" y="3834" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="439" y="3866" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<line x1="515" y1="3848" x2="601" y2="3848" stroke="#0c8997" stroke-width="2"/><polygon points="601,3848 593,3844 593,3852" fill="#0c8997"/>
+<text x="558" y="3834" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">ACK</text>
+<text x="558" y="3866" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="634" y1="3848" x2="676" y2="3848" stroke="#c55858" stroke-width="2"/><polygon points="676,3848 668,3844 668,3852" fill="#c55858"/>
+<text x="677" y="3834" fill="#c55858" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="677" y="3866" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">DPI only</text>
+<line x1="753" y1="3848" x2="839" y2="3848" stroke="#0c8997" stroke-width="2"/><polygon points="839,3848 831,3844 831,3852" fill="#0c8997"/>
+<text x="796" y="3834" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">RST</text>
+<text x="796" y="3866" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="872" y1="3848" x2="958" y2="3848" stroke="#0c8997" stroke-width="2"/><polygon points="958,3848 950,3844 950,3852" fill="#0c8997"/>
+<text x="915" y="3834" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN</text>
+<text x="915" y="3866" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">full path</text>
+<line x1="1077" y1="3848" x2="991" y2="3848" stroke="#0c8997" stroke-width="2"/><polygon points="991,3848 999,3844 999,3852" fill="#0c8997"/>
+<text x="1034" y="3834" fill="#0c8997" font-size="9" font-weight="700" text-anchor="middle">SYN|ACK</text>
+<text x="1034" y="3866" fill="#6c7885" font-size="9" font-weight="400" text-anchor="middle">server</text>
+<text x="270" y="3886" fill="#6c7885" font-size="10" font-weight="400" text-anchor="start">Representative: P0390 · first 7 packet events</text>
+</svg>

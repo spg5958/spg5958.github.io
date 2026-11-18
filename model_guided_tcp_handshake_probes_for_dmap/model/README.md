@@ -1,0 +1,17 @@
+# Executable CPN model
+
+`model_guided_tcp_handshake.PNPRO` is the model created **before** search. It is built directly from explicit places, transitions, literal colored arcs, and guards in `../model_builder.py`. No Python endpoint simulator and no discovered reachability graph are used to construct it.
+
+The three subnets are `F0_G0` (red/pink), `F0_G1` (blue/purple), and `F1_G1` (blue/purple). The latter two are alternatives: the single `G1_FREE` token permits only one second incarnation. Same-tuple allocation additionally requires the old f0 record to reach CLOSED. Different-tuple allocation preserves any old closing/TIME_WAIT record until explicit cleanup. Actual ISN colors are opaque symbolic identities; native input arcs require the appropriate per-incarnation knowledge token before an attacker packet uses a server ISN.
+
+Each subnet has one ordinary token among its TCP phase places. Colored attacker/server ISN tokens are created by an accepted full, checksum-valid SYN. Only firing the genuine server SYN-ACK observation transition consumes `SERVER_UNKNOWN` and creates the colored `KNOWS_SERVER` token. Knowledge remains associated with its old incarnation after closure.
+
+`ATTACKER_READY` and the mandatory reply-bank places serialize packet order. An attacker transition that requires a genuine server response consumes READY and places a reply obligation; only the corresponding server packet returns READY. Thus a subsequent attacker action or a settled checkpoint cannot skip a modeled genuine reply. Application close is an explicit zero-packet environment transition followed by the actual server FIN packet. Each wire packet retains its own `PACKET_SEND_ATTACKER_` or `PACKET_SEND_SERVER_` transition name.
+
+DPI-only and invalid-checksum control transitions are endpoint-state self-loops. They neither create a response obligation nor disclose server knowledge. `READOUT_USED` is an experiment bookkeeping token, separate from TCP state: a DPI-only readout changes only that marker; a full readout changes DATA_EMPTY to DATA_SEEN and creates a genuine TCP ACK obligation. Full readout length is one symbolic `L_readout` (the supplied fixture is 100 bytes). Every active record is cleaned by actual PNPRO reset or TIME_WAIT transitions in each completed replay.
+
+`../cpn_runtime.py` reads the saved PNPRO and computes transition enabling and firing by token arithmetic and guards. It supports the fixed literal-binding subset used here. Its annotation file supplies only labels/display fields and experiment-cost designations; annotations cannot modify a marking or enable a transition. The source XML bytes and SHA256 are recorded before enumeration. Native GreatSPN loading/execution has not been performed in this environment.
+
+The profile is a bounded, conservative symbolic TCP reference. It omits active/simultaneous open, PAWS/options/SACK, SYN cookies/backlog pressure, packet loss, arbitrary payloads, segmentation/reassembly, arbitrary wire reordering, and TIME_WAIT fast reuse. In-window-ahead controls use an unfilled 32768-byte gap, which no 100-byte pilot readout can fill. Challenge-ACK rate limits are assumed to permit each modeled response; TIME_WAIT uses the protected RST profile. Normalized waits have no asserted wall-clock duration. These choices limit completeness and equivalence to any particular current Linux build.
+
+`model_overview.svg` is a readable lifecycle/resource skeleton. The PNPRO contains the complete explicit binding rules, including validation alternatives omitted from that overview.

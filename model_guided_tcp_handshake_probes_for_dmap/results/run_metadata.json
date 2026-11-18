@@ -1,0 +1,412 @@
+{
+  "title": "Model-guided TCP handshake probes for dMAP",
+  "path_count": 1000,
+  "requested_paths": 1000,
+  "search_stats": [
+    {
+      "status": "found_unique_packet_k",
+      "found": 586,
+      "expanded": 5878,
+      "generated": 27464,
+      "unique_states": 13947,
+      "peak_queue": 21142,
+      "elapsed_seconds": 0.847005880000097,
+      "variant_count": 586,
+      "variants_complete": true,
+      "goal": "establish",
+      "unique_packet_paths": 334,
+      "requested_packet_paths": 334,
+      "duplicate_firing_words_skipped": 252,
+      "frontier_remaining": 21001,
+      "bound_pruning": {
+        "no_abstract_completion": 97,
+        "path_bounds": 30792
+      },
+      "search": "supplied SequenceSearchSession with contextual edge weights and CPN remaining-cost potential",
+      "potential": {
+        "states": 21,
+        "edges": 89,
+        "goals": 4,
+        "initial_lower_bound": 5,
+        "method": "reverse Dijkstra on CPN marking/readout-stage graph with N+T edge costs"
+      }
+    },
+    {
+      "status": "found_unique_packet_k",
+      "found": 956,
+      "expanded": 7480,
+      "generated": 56569,
+      "unique_states": 26466,
+      "peak_queue": 48364,
+      "elapsed_seconds": 1.4880230329999904,
+      "variant_count": 956,
+      "variants_complete": true,
+      "goal": "reconnect_same",
+      "unique_packet_paths": 333,
+      "requested_packet_paths": 333,
+      "duplicate_firing_words_skipped": 623,
+      "frontier_remaining": 48134,
+      "bound_pruning": {
+        "no_abstract_completion": 829,
+        "path_bounds": 51590
+      },
+      "search": "supplied SequenceSearchSession with contextual edge weights and CPN remaining-cost potential",
+      "potential": {
+        "states": 186,
+        "edges": 1353,
+        "goals": 16,
+        "initial_lower_bound": 9,
+        "method": "reverse Dijkstra on CPN marking/readout-stage graph with N+T edge costs"
+      }
+    },
+    {
+      "status": "found_unique_packet_k",
+      "found": 427,
+      "expanded": 2393,
+      "generated": 34622,
+      "unique_states": 20314,
+      "peak_queue": 31956,
+      "elapsed_seconds": 0.6957864050000353,
+      "variant_count": 427,
+      "variants_complete": true,
+      "goal": "reconnect_different",
+      "unique_packet_paths": 333,
+      "requested_packet_paths": 333,
+      "duplicate_firing_words_skipped": 94,
+      "frontier_remaining": 31803,
+      "bound_pruning": {
+        "no_abstract_completion": 751,
+        "path_bounds": 6034
+      },
+      "search": "supplied SequenceSearchSession with contextual edge weights and CPN remaining-cost potential",
+      "potential": {
+        "states": 507,
+        "edges": 4740,
+        "goals": 16,
+        "initial_lower_bound": 9,
+        "method": "reverse Dijkstra on CPN marking/readout-stage graph with N+T edge costs"
+      }
+    }
+  ],
+  "elapsed_seconds": 3.584,
+  "model_file": "/workspace/scratch/fffaea6bc940/cpn_revision/model/model_guided_tcp_handshake.PNPRO",
+  "model_sha256_before_search": "e4e546401ac27845eea374d68340b751c4e389f8989ac46e18405495e5c259b1",
+  "model_sha256_after_search": "e4e546401ac27845eea374d68340b751c4e389f8989ac46e18405495e5c259b1",
+  "model_created_before_search": true,
+  "successor_source": "PNPRO XML arcs and guards",
+  "engine_source": "user-supplied greatspn_paths(1).py SequenceSearchSession, modified for context edge weights",
+  "native_GreatSPN_executed": false,
+  "kappa": 1,
+  "cost_formula": "N + A + 2W + kappa*T",
+  "packets_transmitted": 0,
+  "dpi_outcomes_measured": false,
+  "complete": false,
+  "configuration": {
+    "target_per_goal": {
+      "establish": 334,
+      "reconnect_same": 333,
+      "reconnect_different": 333
+    },
+    "seconds_per_goal": 150.0,
+    "max_expansions_per_goal": 500000,
+    "max_queue_per_goal": 160000,
+    "max_packets": 32,
+    "max_firings": 48,
+    "max_wait_units": 2,
+    "max_departures": 2
+  },
+  "ordering_claim": "Nondecreasing complete weighted cost within each fixed goal and restricted PNPRO profile; per-goal targets ensure lifecycle coverage.",
+  "priority_potential": "h is reverse-Dijkstra minimum remaining N+T on the same CPN with history budgets and A/W relaxed; priority edge is actual deltaC+h(child)-h(parent)>=0",
+  "unique_packet_sequences": 1000,
+  "status": "1,000 CPN-derived packet sequences; bounded weighted search",
+  "limitations": [
+    "Conservative symbolic TCP profile, not a pinned complete Linux kernel clone.",
+    "Passive server only; no server-initiated SYN or simultaneous active open.",
+    "Two total incarnation identities and two four-tuples; fresh disjoint sequence windows.",
+    "No loss, options, PAWS, backlog, SYN cookies, or segmentation/reassembly.",
+    "Ahead sequence representative leaves a 32768-byte gap; 100-byte readout never fills it; arbitrary out-of-order queue completion excluded.",
+    "Application close is an explicit modeled environment event; ACK/challenge rate limits assumed permit modeled reply.",
+    "TIME_WAIT fast reuse omitted; protected RST handling; wait units are abstract.",
+    "No DPI state/outcomes are modeled or measured.",
+    "Response ordering is serialized by ATTACKER_READY; one mandatory reply at a time.",
+    "No native GreatSPN parser/runtime executed in this environment."
+  ],
+  "verification": {
+    "status": "PASS",
+    "native_GreatSPN_validation": false,
+    "scope": "Independent literal-color token arithmetic over supplied PNPRO, not full GreatSPN syntax validation.",
+    "search_fixture": {
+      "contextual_repeat_costs": [
+        1,
+        3,
+        7
+      ],
+      "same_transition_name_distinct_history_cost": true
+    },
+    "model_sha256": "e4e546401ac27845eea374d68340b751c4e389f8989ac46e18405495e5c259b1",
+    "places": 75,
+    "transitions": 671,
+    "protocol_fixtures": {
+      "count": 14,
+      "checks": [
+        "VISIBILITY_S_LISTEN",
+        "CHECKSUM_S_LISTEN",
+        "VISIBILITY_CHECKSUM_S_LISTEN",
+        "unknown_server_ISN_ack_forbidden",
+        "knowledge_only_after_genuine_SYNACK",
+        "settled_establishment",
+        "DPI_only_readout_no_TCP_effect_or_reply",
+        "full_readout_ack_is_mandatory",
+        "inwindow_ack_advances_FIN_WAIT1",
+        "inwindow_ack_advances_CLOSING",
+        "ordinary_passive_close_without_wait",
+        "inwindow_ack_advances_LAST_ACK",
+        "exact_vs_inwindow_reset",
+        "retained_knowledge_and_global_incarnation_bound"
+      ]
+    },
+    "results": {
+      "paths": 1000,
+      "unique_physical_packet_sequences": 1000,
+      "conditions": 4000,
+      "goal_counts": {
+        "establish": 334,
+        "reconnect_same": 333,
+        "reconnect_different": 333
+      },
+      "cost_range": [
+        5,
+        13
+      ],
+      "literal_transition_firings": 48902,
+      "distinct_control_cost_profiles": 21
+    }
+  },
+  "plan_count": 1000,
+  "bundle_count": 9,
+  "bundles": [
+    {
+      "id": "B001",
+      "goal": "establish",
+      "probe_ids": [
+        "P0002",
+        "P0005",
+        "P0006"
+      ],
+      "size": 3,
+      "families": [
+        "sequence_validation",
+        "visibility",
+        "checksum"
+      ],
+      "selection": "offline semantic coverage; empirical separation unmeasured",
+      "execution_resource_proxy": 192,
+      "outcome_vector": [
+        null,
+        null,
+        null
+      ],
+      "separated_reference_pairs": null
+    },
+    {
+      "id": "B002",
+      "goal": "establish",
+      "probe_ids": [
+        "P0007",
+        "P0017",
+        "P0019"
+      ],
+      "size": 3,
+      "families": [
+        "visibility_checksum",
+        "reset",
+        "acknowledgment_validation"
+      ],
+      "selection": "offline semantic coverage; empirical separation unmeasured",
+      "execution_resource_proxy": 198,
+      "outcome_vector": [
+        null,
+        null,
+        null
+      ],
+      "separated_reference_pairs": null
+    },
+    {
+      "id": "B003",
+      "goal": "establish",
+      "probe_ids": [
+        "P0035",
+        "P0141"
+      ],
+      "size": 2,
+      "families": [
+        "early_fin",
+        "allocation"
+      ],
+      "selection": "offline semantic coverage; empirical separation unmeasured",
+      "execution_resource_proxy": 138,
+      "outcome_vector": [
+        null,
+        null
+      ],
+      "separated_reference_pairs": null
+    },
+    {
+      "id": "B004",
+      "goal": "reconnect_same",
+      "probe_ids": [
+        "P0335",
+        "P0336",
+        "P0341"
+      ],
+      "size": 3,
+      "families": [
+        "reset",
+        "sequence_validation",
+        "visibility"
+      ],
+      "selection": "offline semantic coverage; empirical separation unmeasured",
+      "execution_resource_proxy": 384,
+      "outcome_vector": [
+        null,
+        null,
+        null
+      ],
+      "separated_reference_pairs": null
+    },
+    {
+      "id": "B005",
+      "goal": "reconnect_same",
+      "probe_ids": [
+        "P0342",
+        "P0343",
+        "P0355"
+      ],
+      "size": 3,
+      "families": [
+        "reset",
+        "checksum",
+        "visibility_checksum",
+        "acknowledgment_validation"
+      ],
+      "selection": "offline semantic coverage; empirical separation unmeasured",
+      "execution_resource_proxy": 396,
+      "outcome_vector": [
+        null,
+        null,
+        null
+      ],
+      "separated_reference_pairs": null
+    },
+    {
+      "id": "B006",
+      "goal": "reconnect_same",
+      "probe_ids": [
+        "P0357",
+        "P0373",
+        "P0536"
+      ],
+      "size": 3,
+      "families": [
+        "reset",
+        "incarnation",
+        "early_fin",
+        "allocation"
+      ],
+      "selection": "offline semantic coverage; empirical separation unmeasured",
+      "execution_resource_proxy": 402,
+      "outcome_vector": [
+        null,
+        null,
+        null
+      ],
+      "separated_reference_pairs": null
+    },
+    {
+      "id": "B007",
+      "goal": "reconnect_different",
+      "probe_ids": [
+        "P0668",
+        "P0671",
+        "P0695"
+      ],
+      "size": 3,
+      "families": [
+        "reset",
+        "sequence_validation",
+        "visibility"
+      ],
+      "selection": "offline semantic coverage; empirical separation unmeasured",
+      "execution_resource_proxy": 348,
+      "outcome_vector": [
+        null,
+        null,
+        null
+      ],
+      "separated_reference_pairs": null
+    },
+    {
+      "id": "B008",
+      "goal": "reconnect_different",
+      "probe_ids": [
+        "P0696",
+        "P0697",
+        "P0709"
+      ],
+      "size": 3,
+      "families": [
+        "reset",
+        "checksum",
+        "visibility_checksum",
+        "acknowledgment_validation"
+      ],
+      "selection": "offline semantic coverage; empirical separation unmeasured",
+      "execution_resource_proxy": 360,
+      "outcome_vector": [
+        null,
+        null,
+        null
+      ],
+      "separated_reference_pairs": null
+    },
+    {
+      "id": "B009",
+      "goal": "reconnect_different",
+      "probe_ids": [
+        "P0711",
+        "P0727"
+      ],
+      "size": 2,
+      "families": [
+        "reset",
+        "incarnation",
+        "early_fin"
+      ],
+      "selection": "offline semantic coverage; empirical separation unmeasured",
+      "execution_resource_proxy": 240,
+      "outcome_vector": [
+        null,
+        null
+      ],
+      "separated_reference_pairs": null
+    }
+  ],
+  "parent_index": "../../index.html",
+  "coverage": {
+    "ordinary": 23,
+    "sequence_validation": 138,
+    "visibility": 269,
+    "checksum": 264,
+    "visibility_checksum": 263,
+    "reset": 483,
+    "acknowledgment_validation": 60,
+    "early_fin": 22,
+    "allocation": 9,
+    "incarnation": 15
+  },
+  "goal_counts": {
+    "establish": 334,
+    "reconnect_same": 333,
+    "reconnect_different": 333
+  }
+}

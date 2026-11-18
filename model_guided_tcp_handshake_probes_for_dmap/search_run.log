@@ -1,0 +1,95 @@
+{
+  "paths": 1000,
+  "goals": {
+    "establish": 334,
+    "reconnect_same": 333,
+    "reconnect_different": 333
+  },
+  "stats": [
+    {
+      "status": "found_unique_packet_k",
+      "found": 586,
+      "expanded": 5878,
+      "generated": 27464,
+      "unique_states": 13947,
+      "peak_queue": 21142,
+      "elapsed_seconds": 0.847005880000097,
+      "variant_count": 586,
+      "variants_complete": true,
+      "goal": "establish",
+      "unique_packet_paths": 334,
+      "requested_packet_paths": 334,
+      "duplicate_firing_words_skipped": 252,
+      "frontier_remaining": 21001,
+      "bound_pruning": {
+        "no_abstract_completion": 97,
+        "path_bounds": 30792
+      },
+      "search": "supplied SequenceSearchSession with contextual edge weights and CPN remaining-cost potential",
+      "potential": {
+        "states": 21,
+        "edges": 89,
+        "goals": 4,
+        "initial_lower_bound": 5,
+        "method": "reverse Dijkstra on CPN marking/readout-stage graph with N+T edge costs"
+      }
+    },
+    {
+      "status": "found_unique_packet_k",
+      "found": 956,
+      "expanded": 7480,
+      "generated": 56569,
+      "unique_states": 26466,
+      "peak_queue": 48364,
+      "elapsed_seconds": 1.4880230329999904,
+      "variant_count": 956,
+      "variants_complete": true,
+      "goal": "reconnect_same",
+      "unique_packet_paths": 333,
+      "requested_packet_paths": 333,
+      "duplicate_firing_words_skipped": 623,
+      "frontier_remaining": 48134,
+      "bound_pruning": {
+        "no_abstract_completion": 829,
+        "path_bounds": 51590
+      },
+      "search": "supplied SequenceSearchSession with contextual edge weights and CPN remaining-cost potential",
+      "potential": {
+        "states": 186,
+        "edges": 1353,
+        "goals": 16,
+        "initial_lower_bound": 9,
+        "method": "reverse Dijkstra on CPN marking/readout-stage graph with N+T edge costs"
+      }
+    },
+    {
+      "status": "found_unique_packet_k",
+      "found": 427,
+      "expanded": 2393,
+      "generated": 34622,
+      "unique_states": 20314,
+      "peak_queue": 31956,
+      "elapsed_seconds": 0.6957864050000353,
+      "variant_count": 427,
+      "variants_complete": true,
+      "goal": "reconnect_different",
+      "unique_packet_paths": 333,
+      "requested_packet_paths": 333,
+      "duplicate_firing_words_skipped": 94,
+      "frontier_remaining": 31803,
+      "bound_pruning": {
+        "no_abstract_completion": 751,
+        "path_bounds": 6034
+      },
+      "search": "supplied SequenceSearchSession with contextual edge weights and CPN remaining-cost potential",
+      "potential": {
+        "states": 507,
+        "edges": 4740,
+        "goals": 16,
+        "initial_lower_bound": 9,
+        "method": "reverse Dijkstra on CPN marking/readout-stage graph with N+T edge costs"
+      }
+    }
+  ],
+  "seconds": 3.584
+}

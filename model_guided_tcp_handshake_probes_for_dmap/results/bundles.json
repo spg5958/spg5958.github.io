@@ -1,0 +1,207 @@
+[
+  {
+    "id": "B001",
+    "goal": "establish",
+    "probe_ids": [
+      "P0002",
+      "P0005",
+      "P0006"
+    ],
+    "size": 3,
+    "families": [
+      "sequence_validation",
+      "visibility",
+      "checksum"
+    ],
+    "selection": "offline semantic coverage; empirical separation unmeasured",
+    "execution_resource_proxy": 192,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B002",
+    "goal": "establish",
+    "probe_ids": [
+      "P0007",
+      "P0017",
+      "P0019"
+    ],
+    "size": 3,
+    "families": [
+      "visibility_checksum",
+      "reset",
+      "acknowledgment_validation"
+    ],
+    "selection": "offline semantic coverage; empirical separation unmeasured",
+    "execution_resource_proxy": 198,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B003",
+    "goal": "establish",
+    "probe_ids": [
+      "P0035",
+      "P0141"
+    ],
+    "size": 2,
+    "families": [
+      "early_fin",
+      "allocation"
+    ],
+    "selection": "offline semantic coverage; empirical separation unmeasured",
+    "execution_resource_proxy": 138,
+    "outcome_vector": [
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B004",
+    "goal": "reconnect_same",
+    "probe_ids": [
+      "P0335",
+      "P0336",
+      "P0341"
+    ],
+    "size": 3,
+    "families": [
+      "reset",
+      "sequence_validation",
+      "visibility"
+    ],
+    "selection": "offline semantic coverage; empirical separation unmeasured",
+    "execution_resource_proxy": 384,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B005",
+    "goal": "reconnect_same",
+    "probe_ids": [
+      "P0342",
+      "P0343",
+      "P0355"
+    ],
+    "size": 3,
+    "families": [
+      "reset",
+      "checksum",
+      "visibility_checksum",
+      "acknowledgment_validation"
+    ],
+    "selection": "offline semantic coverage; empirical separation unmeasured",
+    "execution_resource_proxy": 396,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B006",
+    "goal": "reconnect_same",
+    "probe_ids": [
+      "P0357",
+      "P0373",
+      "P0536"
+    ],
+    "size": 3,
+    "families": [
+      "reset",
+      "incarnation",
+      "early_fin",
+      "allocation"
+    ],
+    "selection": "offline semantic coverage; empirical separation unmeasured",
+    "execution_resource_proxy": 402,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B007",
+    "goal": "reconnect_different",
+    "probe_ids": [
+      "P0668",
+      "P0671",
+      "P0695"
+    ],
+    "size": 3,
+    "families": [
+      "reset",
+      "sequence_validation",
+      "visibility"
+    ],
+    "selection": "offline semantic coverage; empirical separation unmeasured",
+    "execution_resource_proxy": 348,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B008",
+    "goal": "reconnect_different",
+    "probe_ids": [
+      "P0696",
+      "P0697",
+      "P0709"
+    ],
+    "size": 3,
+    "families": [
+      "reset",
+      "checksum",
+      "visibility_checksum",
+      "acknowledgment_validation"
+    ],
+    "selection": "offline semantic coverage; empirical separation unmeasured",
+    "execution_resource_proxy": 360,
+    "outcome_vector": [
+      null,
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  },
+  {
+    "id": "B009",
+    "goal": "reconnect_different",
+    "probe_ids": [
+      "P0711",
+      "P0727"
+    ],
+    "size": 2,
+    "families": [
+      "reset",
+      "incarnation",
+      "early_fin"
+    ],
+    "selection": "offline semantic coverage; empirical separation unmeasured",
+    "execution_resource_proxy": 240,
+    "outcome_vector": [
+      null,
+      null
+    ],
+    "separated_reference_pairs": null
+  }
+]

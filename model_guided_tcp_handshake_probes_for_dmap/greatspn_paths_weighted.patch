@@ -1,0 +1,120 @@
+--- supplied/greatspn_paths(1).py
++++ greatspn_paths.py
+@@ -93,7 +93,7 @@
+ import xml.etree.ElementTree as ET
+ import zipfile
+ 
+-VERSION = "11.0-packet-figures"
++VERSION = "11.1-cpn-contextual-weighted"
+ PACKET_SEND_PREFIX = "PACKET_SEND_"
+ 
+ 
+@@ -169,11 +169,12 @@
+     batch can exceed the cooperative deadline before a safe pause is reached.
+     """
+ 
+-    def __init__(self, initial, successors, key, is_goal, transition_cost=None):
++    def __init__(self, initial, successors, key, is_goal, transition_cost=None, contextual_edge_cost=None):
+         self.successors = successors
+         self.key = key
+         self.is_goal = is_goal
+         self.transition_cost = transition_cost
++        self.contextual_edge_cost = contextual_edge_cost
+         self.cost_map = {}
+         self.stats = Stats(peak_queue=1)
+         self.vertices = []
+@@ -211,6 +212,7 @@
+     def _prefix(self, cost, parent, transition, witnesses):
+         identifier = len(self.prefixes)
+         self.prefixes.append({"cost": cost, "parent": parent,
++                              "edge_weight": 0 if parent is None else cost - self.prefixes[parent]["cost"],
+                               "length": 0 if parent is None else self.prefixes[parent]["length"] + 1,
+                               "transition": transition, "witnesses": witnesses})
+         return identifier
+@@ -274,7 +276,7 @@
+             if edges is not None and active["edge_index"] < len(edges):
+                 outgoing = edges[active["edge_index"]][0]
+                 source = "recorded"
+-        action_cost = None if outgoing is None else self._weight(outgoing.split()[0], remember=False)
++        action_cost = None if outgoing is None or self.contextual_edge_cost is not None else self._weight(outgoing.split()[0], remember=False)
+         return {"candidate_id": prefix_id + 1, "cost": self.prefixes[prefix_id]["cost"],
+                 "length": self.prefixes[prefix_id]["length"],
+                 "transitions": self._word(prefix_id), "phase": phase,
+@@ -293,7 +295,7 @@
+             "root_index": 0, "stack": [], "actions_back": [], "pending": None,
+             "sources": [w for w in witnesses if not self.vertices[self.witnesses[w]["vertex"]]["goal"]],
+             "source_index": 0, "edges": None, "edge_index": 0,
+-            "children": {}, "enqueue_index": 0, "expansion_started": False,
++            "children": {}, "child_weights": {}, "enqueue_index": 0, "expansion_started": False,
+         }
+ 
+     def _next_variant(self, check):
+@@ -339,7 +341,12 @@
+                 raise ValueError("Native firing costs must be integer 1 in transition mode; packet policies use nonnegative integer weights")
+             if not isinstance(action, str) or not action.split():
+                 raise ValueError("Every action must contain a transition name")
+-            weight = self._weight(action.split()[0])
++            if self.contextual_edge_cost is None:
++                weight = self._weight(action.split()[0])
++            else:
++                weight = self.contextual_edge_cost(action.split()[0], self.vertices[vertex]["state"], state)
++                if type(weight) is not int or weight < 0:
++                    raise ValueError("Contextual edge costs must be nonnegative integers")
+             edges.append((action, self._canonical(state), weight))
+         if capacity:
+             self.cache[vertex] = edges
+@@ -470,6 +477,10 @@
+                         continue
+                     action, child, weight = active["edges"][active["edge_index"]]
+                     transition = action.split()[0]
++                    weights = active.setdefault("child_weights", {})
++                    if transition in weights and weights[transition] != weight:
++                        raise ValueError("One transition-name prefix has different contextual costs across bindings; refine the state/transition partition")
++                    weights[transition] = weight
+                     if transition not in active["children"]:
+                         if limits.max_queue and self._pending_count() >= limits.max_queue:
+                             raise _ResumePause("queue_limit")
+@@ -488,7 +499,7 @@
+                     children = list(active["children"].items())
+                     if active["enqueue_index"] < len(children):
+                         transition, witnesses = children[active["enqueue_index"]]
+-                        child_prefix = self._prefix(prefix["cost"] + self.cost_map[transition], active["prefix"],
++                        child_prefix = self._prefix(prefix["cost"] + active.get("child_weights", {}).get(transition, self.cost_map.get(transition, 0)), active["prefix"],
+                                                     transition, witnesses)
+                         self._enqueue(child_prefix)
+                         active["enqueue_index"] += 1
+@@ -535,7 +546,7 @@
+         }
+ 
+     @classmethod
+-    def load(cls, data, successors, key, is_goal, decode_state, transition_cost=None):
++    def load(cls, data, successors, key, is_goal, decode_state, transition_cost=None, contextual_edge_cost=None):
+         """Restore only after the caller verifies model/query/full-cost-policy identity."""
+         if not isinstance(data, dict) or data.get("engine_schema") not in (1, 2):
+             raise ValueError("Unsupported resumable-search checkpoint format")
+@@ -549,6 +560,7 @@
+         session = cls.__new__(cls)
+         session.successors, session.key, session.is_goal = successors, key, is_goal
+         session.transition_cost = transition_cost
++        session.contextual_edge_cost = contextual_edge_cost
+         try:
+             session.cost_map = dict(data["cost_map"])
+             for name, weight in session.cost_map.items():
+@@ -633,7 +645,7 @@
+                 if not isinstance(action, str) or not action.split():
+                     raise ValueError("Checkpoint contains an invalid firing label")
+                 index(vertex, len(self.vertices))
+-                if type(weight) is not int or weight < 0 or self.cost_map.get(action.split()[0]) != weight:
++                if type(weight) is not int or weight < 0 or (self.contextual_edge_cost is None and self.cost_map.get(action.split()[0]) != weight):
+                     raise ValueError("Checkpoint firing costs disagree with the transition cost map")
+ 
+         def counter(value):
+@@ -670,7 +682,7 @@
+                 if not isinstance(prefix["transition"], str) or not prefix["transition"].strip():
+                     raise ValueError("Checkpoint transition name is invalid")
+                 parent = self.prefixes[prefix["parent"]]
+-                if (prefix["cost"] != parent["cost"] + self.cost_map.get(prefix["transition"], -1)
++                if (prefix["cost"] != parent["cost"] + prefix.get("edge_weight", self.cost_map.get(prefix["transition"], -1))
+                         or prefix["length"] != parent["length"] + 1):
+                     raise ValueError("Checkpoint prefix costs or firing lengths are inconsistent")
+             elif number != 0 or prefix["cost"] != 0 or prefix["length"] != 0 or prefix["transition"] is not None:

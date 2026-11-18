@@ -1,0 +1,29 @@
+{
+  "purpose": "source and reproducibility provenance",
+  "inputs": [
+    {
+      "filename": "tcp_no_checksum_1000(2).zip",
+      "sha256": "3f9135b7a76146bb514199cf05e87890cc85116fb8be908c5ff065ee63a95c88"
+    },
+    {
+      "filename": "dmap_tcp_segmentation_algorithm(1).pdf",
+      "sha256": "13a9c2214602e8ab039b737e7356e77fb8a78d3a6ae1bb9a74ac84133567201e"
+    }
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "command": "python3 search.py --output results",
+  "output_status": "offline only; no measured DPI outcomes",
+  "code_sha256": {
+    "search.py": "123d4f7bfbd7f9f6774d949ba58e42a1b63a6ae7159ed795a019d70895ccff68",
+    "render_results.py": "9237b706c1b2229af22391ecd700fc7d4407080581909cc2e35a1455fe96bb9f",
+    "validate.py": "3a8818ecc6cb88e85d9da307c75edfc0aef0e047a4683284a7103438e9f1633c",
+    "export.py": "092a896f597ebd192953f63495ed38895ceadae94d94797c619f400590781993"
+  },
+  "presentation_updates": [
+    "Light/dark mode preserved.",
+    "Back navigation added.",
+    "Packet programs and bundle members preserved; delivered schema contains packet plans and unmeasured observations."
+  ],
+  "generation_note": "Delivered schedules originate from the recorded original bounded run. Revised generator uses structural template patterns and coverage for future runs."
+}

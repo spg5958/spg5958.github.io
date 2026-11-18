@@ -1,0 +1,18 @@
+{
+  "places": 75,
+  "transitions": 671,
+  "arcs": 5807,
+  "colored_classes": {
+    "A_ISN": [
+      "red",
+      "blue"
+    ],
+    "S_ISN": [
+      "pink",
+      "purple"
+    ]
+  },
+  "construction": "CPN built before search from explicit Petri rules; no endpoint oracle or reachability graph conversion",
+  "cpn_sha256": "e4e546401ac27845eea374d68340b751c4e389f8989ac46e18405495e5c259b1",
+  "native_GreatSPN_executed": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "cpn_sha256": "e4e546401ac27845eea374d68340b751c4e389f8989ac46e18405495e5c259b1",
+  "states_discovered": 1500,
+  "frontier_remaining": 417,
+  "edges_checked": 14353,
+  "bounded_state_check": true,
+  "native_GreatSPN_executed": false,
+  "seconds": 0.507,
+  "invariants": [
+    "one TCP phase per incarnation slot",
+    "one readiness/reply obligation token",
+    "server unknown/known exclusive and conserved",
+    "data empty/seen exclusive and conserved",
+    "single second-incarnation allocation",
+    "left_EST implies ever_EST",
+    "TTL/invalid changes no endpoint resource (experiment readout marker exempt)"
+  ]
+}

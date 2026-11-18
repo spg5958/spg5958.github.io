@@ -1,0 +1,154 @@
+{
+  "summary": {
+    "probes": 1000,
+    "families": {
+      "ttl_valid": 356,
+      "full_bad_checksum": 286,
+      "ttl_bad_checksum": 358
+    },
+    "data_packet_distribution": {
+      "1": 6,
+      "2": 118,
+      "3": 527,
+      "4": 205,
+      "5": 81,
+      "6": 63
+    },
+    "max_holes": 2,
+    "geometry_cases_covered": 19,
+    "measured_trials": 0
+  },
+  "search": {
+    "budgets": [
+      {
+        "data_packet_budget": 1,
+        "nodes": 37,
+        "complete_geometries": 1,
+        "cutoff": null,
+        "exhaustive": true
+      },
+      {
+        "data_packet_budget": 2,
+        "nodes": 1333,
+        "complete_geometries": 127,
+        "cutoff": null,
+        "exhaustive": true
+      },
+      {
+        "data_packet_budget": 3,
+        "nodes": 47821,
+        "complete_geometries": 9577,
+        "cutoff": null,
+        "exhaustive": true
+      },
+      {
+        "data_packet_budget": 4,
+        "nodes": 2964,
+        "complete_geometries": 350,
+        "cutoff": "geometry_limit",
+        "exhaustive": false
+      },
+      {
+        "data_packet_budget": 5,
+        "nodes": 3484,
+        "complete_geometries": 350,
+        "cutoff": "geometry_limit",
+        "exhaustive": false
+      },
+      {
+        "data_packet_budget": 6,
+        "nodes": 3226,
+        "complete_geometries": 350,
+        "cutoff": "geometry_limit",
+        "exhaustive": false
+      }
+    ],
+    "completion_lower_bound_prunes": 46458,
+    "hole_bound_prunes": 224,
+    "histories_seen": 10755,
+    "assignments_synthesized": 39782,
+    "duplicate_candidates_suppressed": 31,
+    "elapsed_seconds": 32.223,
+    "candidate_pool": 40697,
+    "retained": 1000,
+    "globally_exhaustive": false,
+    "selection": "Existing packet programs retained in this revision.",
+    "payload_synthesis": "Original run used provenance-directed template assignments; revised code uses bounded structural T/B patterns for future runs.",
+    "geometry_deduplication": "ordered history only; never coverage-map equivalence",
+    "generation_record_note": "These counts describe the original bounded run. No new search was run for this revision."
+  },
+  "bundles": [
+    {
+      "probe_ids": [
+        "S0001",
+        "S0002"
+      ],
+      "data_packets": 6,
+      "connections": 2,
+      "cost": 14,
+      "execution_packets": 126,
+      "id": "pdf_page4",
+      "title": "Two-connection example from the specification",
+      "selection": "Existing packet programs and bundle membership retained."
+    },
+    {
+      "probe_ids": [
+        "S0829",
+        "S0987"
+      ],
+      "data_packets": 5,
+      "connections": 2,
+      "cost": 13,
+      "execution_packets": 117,
+      "id": "compact_pair",
+      "title": "Compact two-connection packet bundle",
+      "selection": "Existing packet programs and bundle membership retained."
+    },
+    {
+      "probe_ids": [
+        "S0027",
+        "S0295",
+        "S0299",
+        "S0987",
+        "S0715",
+        "S0974"
+      ],
+      "data_packets": 14,
+      "connections": 6,
+      "cost": 38,
+      "execution_packets": 342,
+      "id": "coverage_suite",
+      "title": "Six-connection measurement bundle",
+      "selection": "Existing packet programs and bundle membership retained."
+    },
+    {
+      "probe_ids": [
+        "S0295",
+        "S0299",
+        "S0987",
+        "S0974",
+        "S0025"
+      ],
+      "data_packets": 11,
+      "connections": 5,
+      "cost": 31,
+      "execution_packets": 279,
+      "id": "default_family",
+      "title": "TTL-only measurement bundle",
+      "selection": "Existing packet programs and bundle membership retained."
+    },
+    {
+      "probe_ids": [
+        "S0296",
+        "S0987"
+      ],
+      "data_packets": 5,
+      "connections": 2,
+      "cost": 13,
+      "execution_packets": 117,
+      "id": "segmented_sni",
+      "title": "Two-connection bundle with split target SNI",
+      "selection": "Existing packet programs and bundle membership retained."
+    }
+  ]
+}

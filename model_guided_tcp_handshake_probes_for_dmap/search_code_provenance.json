@@ -1,0 +1,17 @@
+{
+  "original_filename": "greatspn_paths(1).py",
+  "original_sha256": "171463cba1cb557b28eeec9f4e0250e6fa9ed1436adca86fba01216166c4a2c3",
+  "modified_sha256": "46e0479fad4a991ecd86ef3c8782125fcfbf5cacdbd62d806859d208d8e86eb5",
+  "original_bytes": 176339,
+  "modified_bytes": 177497,
+  "actual_engine": "greatspn_paths.SequenceSearchSession",
+  "entrypoint": "search_cpn.py",
+  "patch_file": "greatspn_paths_weighted.patch",
+  "modifications": [
+    "optional contextual_edge_cost callback from actual before/after augmented CPN states",
+    "per-prefix child_weights carried into enqueue; no static global map reuse for contextual edges",
+    "assert identical contextual cost for native transition across bindings of one firing prefix",
+    "edge_weight stored and checked in serialized prefix records; backward-compatible static native cost mode",
+    "context-mode progress omits misleading fixed transition cost"
+  ]
+}

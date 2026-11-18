@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="710" viewBox="0 0 1000 710" role="img" aria-label="establish / visibility_checksum, checksum">
+<title>establish / visibility_checksum, checksum</title>
+<style>text{font-family:Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,monospace}</style>
+<rect width="1000" height="710" fill="#ffffff"/>
+<text x="30" y="30" fill="#183147" font-size="19" font-weight="700" text-anchor="start">P0233 · establish / visibility_checksum, checksum</text>
+<text x="30" y="54" fill="#6c7885" font-size="13" font-weight="400" text-anchor="start">OFFLINE PLAN · DPI outcome: UNMEASURED · C=9 · N=7 · A=2 · W=0 · T=0</text>
+<text x="30" y="75" fill="#6c7885" font-size="11" font-weight="400" text-anchor="start">Goal: establish · Checkpoint: f0 / ESTABLISHED / g0</text>
+<rect x="19" y="94" width="182" height="36" rx="9" fill="#117a8a"/>
+<text x="110" y="117" fill="white" font-size="13" font-weight="700" text-anchor="middle">Client / attacker</text>
+<line x1="110" y1="134" x2="110" y2="645" stroke="#d5dee7" stroke-dasharray="5 5"/>
+<rect x="414" y="94" width="182" height="36" rx="9" fill="#7450b2"/>
+<text x="505" y="117" fill="white" font-size="13" font-weight="700" text-anchor="middle">DPI observation point</text>
+<line x1="505" y1="134" x2="505" y2="645" stroke="#d5dee7" stroke-dasharray="5 5"/>
+<rect x="804" y="94" width="182" height="36" rx="9" fill="#42566d"/>
+<text x="895" y="117" fill="white" font-size="13" font-weight="700" text-anchor="middle">Linux server</text>
+<line x1="895" y1="134" x2="895" y2="645" stroke="#d5dee7" stroke-dasharray="5 5"/>
+<text x="502.5" y="156" fill="#738295" font-size="12.5" font-weight="400" text-anchor="middle">SYN · SEQ=red</text>
+<line x1="110" y1="166" x2="895" y2="166" stroke="#738295" stroke-width="2"/><polygon points="895,166 887,162 887,170" fill="#738295"/>
+<text x="120" y="184" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">f0 / g0 · ISNs red · ordinary TTL · valid checksum</text>
+<text x="120" y="198" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">allocate request</text>
+<text x="502.5" y="227" fill="#738295" font-size="12.5" font-weight="400" text-anchor="middle">SYN|ACK · SEQ=pink · ACK=red+1</text>
+<line x1="895" y1="237" x2="110" y2="237" stroke="#738295" stroke-width="2"/><polygon points="110,237 118,233 118,241" fill="#738295"/>
+<text x="120" y="255" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">f0 / g0 · ISNs red/pink · ordinary TTL · valid checksum</text>
+<text x="120" y="269" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">genuine SYN ACK observed</text>
+<text x="502.5" y="298" fill="#738295" font-size="12.5" font-weight="400" text-anchor="middle">ACK · SEQ=red+1 · ACK=pink+1</text>
+<line x1="110" y1="308" x2="895" y2="308" stroke="#738295" stroke-width="2"/><polygon points="895,308 887,304 887,312" fill="#738295"/>
+<text x="120" y="326" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">f0 / g0 · ISNs red/pink · ordinary TTL · valid checksum</text>
+<text x="120" y="340" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">settled ESTABLISHED</text>
+<text x="307.5" y="369" fill="#c55858" font-size="12.5" font-weight="400" text-anchor="middle">SYN · SEQ=red</text>
+<line x1="110" y1="379" x2="505" y2="379" stroke="#c55858" stroke-width="2"/><polygon points="505,379 497,375 497,383" fill="#c55858"/>
+<line x1="515" y1="379" x2="739" y2="379" stroke="#c55858" stroke-width="1.7" stroke-dasharray="5 4" opacity=".55"/>
+<text x="754" y="384" fill="#c55858" font-size="20" font-weight="400" text-anchor="start">×</text>
+<text x="625" y="400" fill="#6c7885" font-size="12" font-weight="400" text-anchor="middle">expires before Linux</text>
+<text x="120" y="397" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">f0 / g0 · ISNs red · DPI-only TTL · invalid checksum</text>
+<text x="502.5" y="431" fill="#c55858" font-size="12.5" font-weight="400" text-anchor="middle">FIN|ACK · SEQ=red+1 · ACK=pink+1</text>
+<line x1="110" y1="441" x2="895" y2="441" stroke="#c55858" stroke-width="2"/><polygon points="895,441 887,437 887,445" fill="#c55858"/>
+<text x="910" y="446" fill="#c55858" font-size="20" font-weight="400" text-anchor="start">×</text>
+<text x="120" y="459" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">f0 / g0 · ISNs red/pink · ordinary TTL · invalid checksum</text>
+<text x="120" y="473" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">invalid TCP checksum rejected</text>
+<text x="307.5" y="502" fill="#c87521" font-size="12.5" font-weight="400" text-anchor="middle">READOUT · PSH|ACK + ClientHello · SEQ=red+1</text>
+<line x1="110" y1="512" x2="505" y2="512" stroke="#c87521" stroke-width="2"/><polygon points="505,512 497,508 497,516" fill="#c87521"/>
+<line x1="515" y1="512" x2="739" y2="512" stroke="#c87521" stroke-width="1.7" stroke-dasharray="5 4" opacity=".55"/>
+<text x="754" y="517" fill="#c87521" font-size="20" font-weight="400" text-anchor="start">×</text>
+<text x="625" y="533" fill="#6c7885" font-size="12" font-weight="400" text-anchor="middle">expires before Linux</text>
+<text x="120" y="530" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">f0 / g0 · ISNs red/pink · ACK=pink+1 · DPI-only TTL · valid</text>
+<text x="120" y="544" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">checksum</text>
+<text x="502.5" y="573" fill="#738295" font-size="12.5" font-weight="400" text-anchor="middle">RST · SEQ=red+1</text>
+<line x1="110" y1="583" x2="895" y2="583" stroke="#738295" stroke-width="2"/><polygon points="895,583 887,579 887,587" fill="#738295"/>
+<text x="120" y="601" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">f0 / g0 · ISNs red · ordinary TTL · valid checksum</text>
+<text x="120" y="615" fill="#6c7885" font-size="10.5" font-weight="400" text-anchor="start">exact sequence cleanup reset</text>
+<text x="500" y="675" fill="#6c7885" font-size="11" font-weight="400" text-anchor="middle">CPN-derived symbolic history · readout and cleanup included · all DPI outcomes unmeasured</text>
+<text x="500" y="695" fill="#6c7885" font-size="12" font-weight="400" text-anchor="middle">TTL-limited packets expire before Linux. Missing responses are not a censorship signal.</text>
+</svg>

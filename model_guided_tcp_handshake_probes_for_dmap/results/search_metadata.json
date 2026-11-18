@@ -1,0 +1,121 @@
+{
+  "title": "Model-guided TCP handshake probes for dMAP",
+  "path_count": 1000,
+  "requested_paths": 1000,
+  "search_stats": [
+    {
+      "status": "found_unique_packet_k",
+      "found": 586,
+      "expanded": 5878,
+      "generated": 27464,
+      "unique_states": 13947,
+      "peak_queue": 21142,
+      "elapsed_seconds": 0.847005880000097,
+      "variant_count": 586,
+      "variants_complete": true,
+      "goal": "establish",
+      "unique_packet_paths": 334,
+      "requested_packet_paths": 334,
+      "duplicate_firing_words_skipped": 252,
+      "frontier_remaining": 21001,
+      "bound_pruning": {
+        "no_abstract_completion": 97,
+        "path_bounds": 30792
+      },
+      "search": "supplied SequenceSearchSession with contextual edge weights and CPN remaining-cost potential",
+      "potential": {
+        "states": 21,
+        "edges": 89,
+        "goals": 4,
+        "initial_lower_bound": 5,
+        "method": "reverse Dijkstra on CPN marking/readout-stage graph with N+T edge costs"
+      }
+    },
+    {
+      "status": "found_unique_packet_k",
+      "found": 956,
+      "expanded": 7480,
+      "generated": 56569,
+      "unique_states": 26466,
+      "peak_queue": 48364,
+      "elapsed_seconds": 1.4880230329999904,
+      "variant_count": 956,
+      "variants_complete": true,
+      "goal": "reconnect_same",
+      "unique_packet_paths": 333,
+      "requested_packet_paths": 333,
+      "duplicate_firing_words_skipped": 623,
+      "frontier_remaining": 48134,
+      "bound_pruning": {
+        "no_abstract_completion": 829,
+        "path_bounds": 51590
+      },
+      "search": "supplied SequenceSearchSession with contextual edge weights and CPN remaining-cost potential",
+      "potential": {
+        "states": 186,
+        "edges": 1353,
+        "goals": 16,
+        "initial_lower_bound": 9,
+        "method": "reverse Dijkstra on CPN marking/readout-stage graph with N+T edge costs"
+      }
+    },
+    {
+      "status": "found_unique_packet_k",
+      "found": 427,
+      "expanded": 2393,
+      "generated": 34622,
+      "unique_states": 20314,
+      "peak_queue": 31956,
+      "elapsed_seconds": 0.6957864050000353,
+      "variant_count": 427,
+      "variants_complete": true,
+      "goal": "reconnect_different",
+      "unique_packet_paths": 333,
+      "requested_packet_paths": 333,
+      "duplicate_firing_words_skipped": 94,
+      "frontier_remaining": 31803,
+      "bound_pruning": {
+        "no_abstract_completion": 751,
+        "path_bounds": 6034
+      },
+      "search": "supplied SequenceSearchSession with contextual edge weights and CPN remaining-cost potential",
+      "potential": {
+        "states": 507,
+        "edges": 4740,
+        "goals": 16,
+        "initial_lower_bound": 9,
+        "method": "reverse Dijkstra on CPN marking/readout-stage graph with N+T edge costs"
+      }
+    }
+  ],
+  "elapsed_seconds": 3.584,
+  "model_file": "/workspace/scratch/fffaea6bc940/cpn_revision/model/model_guided_tcp_handshake.PNPRO",
+  "model_sha256_before_search": "e4e546401ac27845eea374d68340b751c4e389f8989ac46e18405495e5c259b1",
+  "model_sha256_after_search": "e4e546401ac27845eea374d68340b751c4e389f8989ac46e18405495e5c259b1",
+  "model_created_before_search": true,
+  "successor_source": "PNPRO XML arcs and guards",
+  "engine_source": "user-supplied greatspn_paths(1).py SequenceSearchSession, modified for context edge weights",
+  "native_GreatSPN_executed": false,
+  "kappa": 1,
+  "cost_formula": "N+A+2W+kappa*T",
+  "packets_transmitted": 0,
+  "dpi_outcomes_measured": false,
+  "complete": false,
+  "configuration": {
+    "target_per_goal": {
+      "establish": 334,
+      "reconnect_same": 333,
+      "reconnect_different": 333
+    },
+    "seconds_per_goal": 150.0,
+    "max_expansions_per_goal": 500000,
+    "max_queue_per_goal": 160000,
+    "max_packets": 32,
+    "max_firings": 48,
+    "max_wait_units": 2,
+    "max_departures": 2
+  },
+  "ordering_claim": "Nondecreasing complete weighted cost within each fixed goal and restricted PNPRO profile; per-goal targets ensure lifecycle coverage.",
+  "priority_potential": "h is reverse-Dijkstra minimum remaining N+T on the same CPN with history budgets and A/W relaxed; priority edge is actual deltaC+h(child)-h(parent)>=0",
+  "unique_packet_sequences": 1000
+}
